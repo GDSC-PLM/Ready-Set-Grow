@@ -1,0 +1,8 @@
+footer {
+    height: 80px;
+    background: rgb(179, 179, 179);
+}
+
+footer p {
+    margin: 0;
+}
