@@ -1,0 +1,12 @@
+nav {
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 80px;
+    background: rgb(179, 179, 179);
+}
+
+nav p {
+    margin: 0;
+}
