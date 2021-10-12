@@ -7,8 +7,9 @@ Our event needs a website and we need passionate people to work on it. And it's 
 
 Here's the guideline on how you can contribute:
 
-1. Check the "Projects" tab and see the checklist of all the tasks that must be done.
-2. Check if there's any issue that you think you can solve.
+1. The project is made of React.js, so we prefer people who uses the said framework/library.
+2. Check the "Projects" tab and see the checklist of all the tasks that must be done.
+3. Check if there's any issue that you think you can solve.
 
 That's all we need. All of the assets will be provided if you need it in a particular task. Here is the Figma link so you can see what needs to be done.
 https://www.figma.com/file/B39NpQblKIbx1qUW9B5vRf/Ready-Set-Grow
