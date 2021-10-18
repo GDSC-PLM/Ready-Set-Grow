@@ -1,11 +1,4 @@
-
-.add-testing-border {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-}
-
-.pre-event-hero {
+.in-event-hero {
     position: relative;
     height: 90vh;
     max-height: 1100px;
@@ -14,27 +7,23 @@
     padding-left: 10%;
 }
 
-.home-page {
-    padding-top: 80px; 
-    height: 100%;   
-}
-
-.home-page .colored-bars {
+.in-event-hero .colored-bars-2 {
     position: absolute;
-    right: -7%;
-    bottom: -10%;
+    right: -14%;
+    bottom: -36%;
     justify-items: bottom;
     z-index: 0;
+    height: 115vh;
 }
 
-.home-page .colored-bars img {
+.in-event-hero .colored-bars-2 img {
     position: relative;
     bottom: 0;
     height: 100%;
 }
 
-.home-page .coming-soon {
-    width: 600px;
+.in-event-hero .event-details {
+    width: 720px;
     z-index: 1;
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Google Sans';
@@ -49,61 +38,34 @@
     transition: 200ms;
 }
 
-.home-page .coming-soon h3 {
+.in-event-hero .event-name {
     /* font-family: 'Open Sans', sans-serif; */
     font-size: 90px;
-    font-weight: 400;
     margin: 0 auto;   
     width: 95%;
+    font-size: 124px;
+    font-weight: 600;
+    line-height: 1em;
 }
 
-.home-page .coming-soon .count-down {
-    margin: 28px auto 0 auto;
-}
+.in-event-hero .event-name :nth-child(1) { color: #F44336; }
+.in-event-hero .event-name :nth-child(2) { color: #FBBF0E; }
+.in-event-hero .event-name :nth-child(3) {color: #66BB6A; }
 
-.home-page .coming-soon .count-down th {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.home-page .coming-soon .count-down .attr {
-    min-width: 95px;
-    max-width: 95px;
-}
-
-.home-page .coming-soon .count-down tbody {
-    font-size: 78px;
-    /* background: blue; */
-    vertical-align: top;
-    line-height: 100%;
-}
-
-.home-page .coming-soon .count-down td {
-    padding-top: 0;
-    vertical-align: top;
-    text-align: center;
-    font-weight: 400;
-}
-
-.home-page .coming-soon .count-down .value {
-    width: 100px;
-    min-width: 95px;
-    max-width: 95px;
-}
-
-
-
-
-
-.home-page .coming-soon p {
-    font-size: 24px;
+.in-event-hero .date-of-event {
+    margin: 24px auto 0 auto;
+    font-size: 36px;
     font-weight: 400;
     width: 95%;
-    align-self: center;
-    margin: 0 auto;
 }
 
-.home-page .coming-soon .btn-container {
+.in-event-hero .tagline {
+    margin: 16px auto 0 auto;
+    font-size: 24px;
+    width: 95%;
+}
+
+.in-event-hero .btn-container {
     display: flex;
     flex-wrap: wrap;
     /* background: lightblue; */
@@ -112,7 +74,7 @@
 }
 
 
-.home-page .coming-soon a {
+.in-event-hero .event-details a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,20 +91,14 @@
 }
 
 
-.home-page .coming-soon .register-btn {
+.in-event-hero .event-details .register-btn {
     border: 2px solid #FFD772;
     box-sizing: border-box;
     border-radius: 28px;
     margin-right: 0;
 }
 
-.home-page .coming-soon .learn-more-btn {
+.in-event-hero .event-details .learn-more-btn {
     margin-left: 40px;
     text-align: left;
-}
-
-
-.gap {
-    height: 80vh;
-    background: rgb(245, 245, 245);
 }

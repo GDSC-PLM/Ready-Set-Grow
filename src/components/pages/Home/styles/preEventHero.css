@@ -1,10 +1,3 @@
-
-.add-testing-border {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-}
-
 .pre-event-hero {
     position: relative;
     height: 90vh;
@@ -14,12 +7,7 @@
     padding-left: 10%;
 }
 
-.home-page {
-    padding-top: 80px; 
-    height: 100%;   
-}
-
-.home-page .colored-bars {
+.pre-event-hero .colored-bars {
     position: absolute;
     right: -7%;
     bottom: -10%;
@@ -27,13 +15,13 @@
     z-index: 0;
 }
 
-.home-page .colored-bars img {
+.pre-event-hero .colored-bars img {
     position: relative;
     bottom: 0;
     height: 100%;
 }
 
-.home-page .coming-soon {
+.pre-event-hero .coming-soon {
     width: 600px;
     z-index: 1;
     /* font-family: 'Open Sans', sans-serif; */
@@ -49,7 +37,7 @@
     transition: 200ms;
 }
 
-.home-page .coming-soon h3 {
+.pre-event-hero .coming-soon h3 {
     /* font-family: 'Open Sans', sans-serif; */
     font-size: 90px;
     font-weight: 400;
@@ -57,35 +45,35 @@
     width: 95%;
 }
 
-.home-page .coming-soon .count-down {
+.pre-event-hero .coming-soon .count-down {
     margin: 28px auto 0 auto;
 }
 
-.home-page .coming-soon .count-down th {
+.pre-event-hero .coming-soon .count-down th {
     font-size: 18px;
     font-weight: 400;
 }
 
-.home-page .coming-soon .count-down .attr {
+.pre-event-hero .coming-soon .count-down .attr {
     min-width: 95px;
     max-width: 95px;
 }
 
-.home-page .coming-soon .count-down tbody {
+.pre-event-hero .coming-soon .count-down tbody {
     font-size: 78px;
     /* background: blue; */
     vertical-align: top;
     line-height: 100%;
 }
 
-.home-page .coming-soon .count-down td {
+.pre-event-hero .coming-soon .count-down td {
     padding-top: 0;
     vertical-align: top;
     text-align: center;
     font-weight: 400;
 }
 
-.home-page .coming-soon .count-down .value {
+.pre-event-hero .coming-soon .count-down .value {
     width: 100px;
     min-width: 95px;
     max-width: 95px;
@@ -95,7 +83,7 @@
 
 
 
-.home-page .coming-soon p {
+.pre-event-hero .coming-soon p {
     font-size: 24px;
     font-weight: 400;
     width: 95%;
@@ -103,7 +91,7 @@
     margin: 0 auto;
 }
 
-.home-page .coming-soon .btn-container {
+.pre-event-hero .coming-soon .btn-container {
     display: flex;
     flex-wrap: wrap;
     /* background: lightblue; */
@@ -112,7 +100,7 @@
 }
 
 
-.home-page .coming-soon a {
+.pre-event-hero .coming-soon a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,20 +117,14 @@
 }
 
 
-.home-page .coming-soon .register-btn {
+.pre-event-hero .coming-soon .register-btn {
     border: 2px solid #FFD772;
     box-sizing: border-box;
     border-radius: 28px;
     margin-right: 0;
 }
 
-.home-page .coming-soon .learn-more-btn {
+.pre-event-hero .coming-soon .learn-more-btn {
     margin-left: 40px;
     text-align: left;
-}
-
-
-.gap {
-    height: 80vh;
-    background: rgb(245, 245, 245);
 }
