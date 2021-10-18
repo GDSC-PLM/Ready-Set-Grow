@@ -1,9 +1,10 @@
 nav {
   z-index: 1;
+  position: fixed;
   width: 100%;
   top: 0;
   /* position: fixed; */
-  height: 80px;
+  height: 100px;
   background: #ffffff;
   box-sizing: border-box;
 
@@ -25,7 +26,9 @@ nav p {
   grid-template-columns: repeat(6, auto);
   list-style: none;
   text-align: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  margin: 0;
+  padding: 20px 0;
 }
 
 .logo img {
