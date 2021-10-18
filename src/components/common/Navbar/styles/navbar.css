@@ -1,12 +1,93 @@
 nav {
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    position: fixed;
-    height: 80px;
-    background: rgb(179, 179, 179);
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  /* position: fixed; */
+  height: 80px;
+  background: #ffffff;
+  box-sizing: border-box;
+
+  font-family: "Google Sans";
+  font-style: regular;
+  font-weight: 400;
+  font-size: 20px;
+  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 nav p {
-    margin: 0;
+  margin: 0;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  list-style: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.logo img {
+  position: relative;
+  height: 100%;
+  padding-left: 8vw;
+  width: 59px;
+  height: auto;
+}
+
+.first-three-menu {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 9vw;
+}
+
+.nav-item {
+  padding-right: 6vw;
+}
+
+.nav-learn-more {
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #737373;
+}
+
+.nav-register-now {
+  background: #ffd772;
+  border: 2px solid #ffd772;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 186px;
+  height: 58px;
+  left: 158px;
+  top: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-links-register {
+  text-decoration: none;
+  color: #404040;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-last-menu {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 11vw;
 }
