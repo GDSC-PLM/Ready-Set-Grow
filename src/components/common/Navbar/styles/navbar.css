@@ -3,7 +3,6 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  /* position: fixed; */
   height: 100px;
   background: #ffffff;
   box-sizing: border-box;
@@ -28,7 +27,8 @@ nav p {
   text-align: center;
   /* margin-top: 40px; */
   margin: 0;
-  padding: 20px 0;
+  padding: 12px 0;
+  background: white;
 }
 
 .logo img {
