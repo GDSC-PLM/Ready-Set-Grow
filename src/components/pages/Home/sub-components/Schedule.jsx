@@ -1,9 +1,37 @@
 import React, { Component } from "react";
 import { FiClock } from "react-icons/fi";
 import { getEventTalks } from "../../../../assets/data/eventTalks";
+import background from "../../../../assets/images/png/colored-arrows.png"
 import "../styles/schedule.css";
 
 export default class Schedule extends Component {
+  state = {
+    eventTalks: getEventTalks(),
+    selectedDay: 1,
+    displayedTalks: [],
+  };
+
+  //=== LifeCycle Hooks ===
+  componentDidMount = () => {
+    this.setTalksToBeDisplayed();
+    this.setTalksToBeDisplayed(1);
+  };
+
+  setTalksToBeDisplayed = (selectedDay) => {
+    let talks = {...this.state.eventTalks};
+    let arrayOfTalks = Object.values(talks);
+
+    console.log(typeof(arrayOfTalks));
+    let talksToDisplay = arrayOfTalks.filter((talk) => talk.day === selectedDay);
+
+    this.setState({ displayedTalks: talksToDisplay });
+  };
+
+  setSelectedDay = (day) => {
+    this.setState({selectedDay: day});
+    this.setTalksToBeDisplayed(day);
+  }
+
   eventDates = [
     { dayNumber: 1, date: "Nov 22" },
     { dayNumber: 2, date: "Nov 23" },
@@ -12,17 +40,15 @@ export default class Schedule extends Component {
     { dayNumber: 5, date: "Nov 26" },
   ];
 
-  eventTalks = getEventTalks();
-
   renderDaySelector = () => {
     return (
       <div className="day-selector-container">
         {this.eventDates.map((item) => {
           return (
-            <div className="day-option">
-              <div className="day-number">DAY {item.day}</div>
+            <div className="day-option" onClick={() => this.setSelectedDay(item.dayNumber)}>
+              <div className="day-number">DAY {item.dayNumber}</div>
               <div className="month-n-date">{item.date}</div>
-              <div className="highlight-container" />
+              <div className={item.dayNumber === this.state.selectedDay ? "highlight-container active" : "highlight-container"}/>
             </div>
           );
         })}
@@ -33,7 +59,7 @@ export default class Schedule extends Component {
   renderSpeakerCards = () => {
     return (
       <div className="speakers-of-the-day">
-        {this.eventTalks.map((talk) => {
+        {this.state.displayedTalks.map((talk) => {
           return (
             <div className="speaker">
               <div className="photo-container">
@@ -43,9 +69,7 @@ export default class Schedule extends Component {
                 <span className="tag">Talk</span>
                 <h3 className="speaker-name">{talk.speaker.name}</h3>
                 <p className="organization">{talk.speaker.organization}</p>
-                <div className="talk-title">
-                  {talk.title}
-                </div>
+                <div className="talk-title">{talk.title}</div>
                 <div className="talk-time">
                   <FiClock />
                   {talk.time}
@@ -94,13 +118,18 @@ export default class Schedule extends Component {
   render() {
     return (
       <div className="schedule">
-        <h2>A Week of Career Building</h2>
-        <p>
-          Browse the agendas and speakers to find the most interesting
-          discussions for you.
-        </p>
-        {this.renderDaySelector()}
-        {this.renderSpeakerCards()}
+        <img src={background} className="background-img" alt="Background" />
+
+        <div className="main-content">
+          <h2>A Week of Career Building</h2>
+          <p>
+            Browse the agendas and speakers to find the most interesting
+            discussions for you.
+          </p>
+          {this.renderDaySelector()}
+          {this.renderSpeakerCards()}
+        </div>
+        
       </div>
     );
   }
