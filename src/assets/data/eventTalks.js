@@ -36,6 +36,142 @@ const eventTalks = [
       time: "3:35 PM - 4:20 PM",
       picture: dummySpeaker3,
     },
+
+
+    {
+      title: "Why should you pursue career development while still a student?",
+      speaker: {
+        name: "Aanas Ali 2",
+        organization: "Devcurate",
+      },
+      day: 2,
+      time: "1:15 PM - 2:00 PM",
+      picture: dummySpeaker1,
+    },
+
+    {
+      title: "Upskill: Amplify your professional careers",
+      speaker: {
+        name: "Raphael Francis Quisumbing 2",
+        organization: "Edukasyon.ph",
+      },
+      day: 2,
+      time: "2:20 PM - 3:05 PM",
+      picture: dummySpeaker2,
+    },
+
+    {
+      title: "Land your Dream Job with Passion Project",
+      speaker: {
+        name: "Reimon Llorick Gutierrez 2",
+        organization: "Ambient Digital",
+      },
+      day: 2,
+      time: "3:35 PM - 4:20 PM",
+      picture: dummySpeaker3,
+    },
+
+    {
+      title: "Why should you pursue career development while still a student?",
+      speaker: {
+        name: "Aanas Ali 3",
+        organization: "Devcurate",
+      },
+      day: 3,
+      time: "1:15 PM - 2:00 PM",
+      picture: dummySpeaker1,
+    },
+
+    {
+      title: "Upskill: Amplify your professional careers",
+      speaker: {
+        name: "Raphael Francis Quisumbing 3",
+        organization: "Edukasyon.ph",
+      },
+      day: 3,
+      time: "2:20 PM - 3:05 PM",
+      picture: dummySpeaker2,
+    },
+
+    {
+      title: "Land your Dream Job with Passion Project 3",
+      speaker: {
+        name: "Reimon Llorick Gutierrez",
+        organization: "Ambient Digital",
+      },
+      day: 3,
+      time: "3:35 PM - 4:20 PM",
+      picture: dummySpeaker3,
+    },
+
+
+    {
+      title: "Why should you pursue career development while still a student?",
+      speaker: {
+        name: "Aanas Ali 4",
+        organization: "Devcurate",
+      },
+      day: 4,
+      time: "1:15 PM - 2:00 PM",
+      picture: dummySpeaker1,
+    },
+
+    {
+      title: "Upskill: Amplify your professional careers",
+      speaker: {
+        name: "Raphael Francis Quisumbing 4",
+        organization: "Edukasyon.ph",
+      },
+      day: 4,
+      time: "2:20 PM - 3:05 PM",
+      picture: dummySpeaker2,
+    },
+
+    {
+      title: "Land your Dream Job with Passion Project 4",
+      speaker: {
+        name: "Reimon Llorick Gutierrez",
+        organization: "Ambient Digital",
+      },
+      day: 4,
+      time: "3:35 PM - 4:20 PM",
+      picture: dummySpeaker3,
+    },
+
+
+
+    {
+      title: "Why should you pursue career development while still a student?",
+      speaker: {
+        name: "Aanas Ali 5",
+        organization: "Devcurate",
+      },
+      day: 5,
+      time: "1:15 PM - 2:00 PM",
+      picture: dummySpeaker1,
+    },
+
+    {
+      title: "Upskill: Amplify your professional careers",
+      speaker: {
+        name: "Raphael Francis Quisumbing 5",
+        organization: "Edukasyon.ph",
+      },
+      day: 5,
+      time: "2:20 PM - 3:05 PM",
+      picture: dummySpeaker2,
+    },
+
+    {
+      title: "Land your Dream Job with Passion Project 5",
+      speaker: {
+        name: "Reimon Llorick Gutierrez",
+        organization: "Ambient Digital",
+      },
+      day: 5,
+      time: "3:35 PM - 4:20 PM",
+      picture: dummySpeaker3,
+    },
 ];
 
 export function getEventTalks() {
