@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./styles/navbar.css";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/Ready-Set-Grow_Logo 1.png";
+import logo from "../../../assets/images2/NavBar/Ready-Set-Grow_Logo 1.png";
 export default class Navbar extends Component {
   render() {
     return (
