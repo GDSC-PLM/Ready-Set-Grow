@@ -1,12 +1,35 @@
 .schedule {
-    height: 1080px;
-    padding-top: 80px;
+    height: 1200px;
 
     font-family: 'Google Sans';
     font-style: regular;
     src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2) format('woff2');
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+
+    overflow: hidden;
+    /* background:rgb(167, 167, 167); */
+    position: relative;
 }
+
+.schedule .background-img {
+    position: absolute;
+    z-index: 0;
+    width: 1440px;
+    max-width: 120%;
+    margin: 20px auto auto auto;
+    left: -10%;
+    right: -10%;
+}
+
+.schedule .main-content {
+    z-index: 1;
+    position: absolute;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
 
 .schedule h2 {
     font-size: 56px;
@@ -14,7 +37,7 @@
     text-align: center;
     width: 1200px;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 .schedule p {
@@ -30,13 +53,14 @@
     max-width: 80%;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    margin: 60px auto 0 auto;
+    margin: 80px auto 0 auto;
     /* background: rgb(255, 175, 175); */
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid #C4C4C4;
+    cursor: pointer;
 }
 
 .schedule .day-option {
@@ -47,7 +71,7 @@
     text-align: center;
     margin: 0 auto;
     /* background: greenyellow; */
-    
+
 }
 
 .schedule .day-option .day-number {
@@ -79,7 +103,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
 
-    margin: 60px auto 0 auto;
+    margin: 100px auto 0 auto;
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
@@ -89,7 +113,7 @@
 .schedule .speaker {
     height: 440px;
     width: 224px;
-    background:rgb(145, 255, 216);
+    /* background:rgb(145, 255, 216); */
 }
 
 .schedule .speaker .photo-container {
@@ -99,6 +123,7 @@
 
 .schedule .speaker .photo-container img {
     width: 100%;
+    z-index: 2;
 }
 
 .schedule .speaker .talk-details-container {
