@@ -1,8 +1,73 @@
 footer {
-    height: 80px;
-    background: rgb(179, 179, 179);
+  /* min-height: 0vh; */
+  background: #ffcc34;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
 }
 
 footer p {
-    margin: 0;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0px 0px 0px;
+  padding-bottom: 10px;
+
+  font-family: "Google Sans";
+  font-style: regular;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+.firstLine {
+  align-items: center;
+  text-align: center;
+}
+
+.firstLine img {
+  height: 51.54px;
+  margin: 20px 0px 15px 0px;
+}
+
+.socMedIcons {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.socMedIconsIndiv {
+  height: 28px;
+  width: auto;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.margin-spacing {
+  margin-right: 28px;
+}
+
+.DSCLogo {
+  height: 24.78px;
+  padding: 0px;
+}
+
+.BsLinkedin {
+  border-radius: 50%;
+}
+
+.lastLine {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.lastLine img {
+  height: 10px;
+  width: 100%;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0;
 }
