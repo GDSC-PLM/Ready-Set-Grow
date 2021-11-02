@@ -11,8 +11,8 @@ export default class Home extends Component {
   render() {
     return (
         <section className="home-page">
-          <InEventHero/>
-          {/* <PreEventHero/> */}
+          {/* <InEventHero/> */}
+          <PreEventHero/>
           <AboutTheEvent/>
           <Sponsors/>
           <Schedule/>
