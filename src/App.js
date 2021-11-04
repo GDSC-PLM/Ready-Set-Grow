@@ -8,8 +8,16 @@ import Home from "./components/pages/Home/Home.jsx";
 import Events from "./components/pages/Events/Events.jsx";
 import AboutUs from "./components/pages/AboutUs/AboutUs.jsx";
 import NotFound from "./components/pages/NotFound/NotFound.jsx";
-
+import { getCoreTeam, getPartners, getSponsors, getSpeakers, getCoPresenters } from "./util/getDataHelper.js";
 export default class App extends Component {
+  componentDidMount() {
+    getCoreTeam();
+    getPartners();
+    getSponsors();
+    getSpeakers();
+    getCoPresenters();
+  }
+
   render() {
     return (
       <main>
