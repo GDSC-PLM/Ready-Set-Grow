@@ -1,6 +1,12 @@
 import React from "react";
+
+// External Libraries
 import Countdown, {zeroPad} from 'react-countdown';
+
+// Stylings
 import "../styles/preEventHero.css";
+
+//Assets
 import coloredBars from "../../../../assets/images/png/colored-bars.png";
 
 const PreEventHero = () => {
@@ -58,10 +64,10 @@ const PreEventHero = () => {
 
         <div className="btn-container">
             <a className="register-btn" type="button">
-            Register Now
+                Register Now
             </a>
             <a className="learn-more-btn" type="button">
-            Learn More
+                Learn More
             </a>
         </div>
         </div>

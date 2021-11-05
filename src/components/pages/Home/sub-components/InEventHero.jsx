@@ -1,6 +1,10 @@
 import React from "react";
+
+// Assets
 import coloredBars2 from "../../../../assets/images/png/Illustration.png";
 import coloredBarsSmall2 from "../../../../assets/images/png/colored-bars-2(small).png";
+
+// Stylings
 import "../styles/inEventHero.css";
 
 const InEventHero = (props) => {
@@ -11,12 +15,13 @@ const InEventHero = (props) => {
     <div className="in-event-hero">
       
       <div className="colored-bars-2">
+        {/* The background image will change if the screen width is 1024px or smaller */}
         <img src={props.innerWidth > 1024 ? coloredBars2 : coloredBarsSmall2} alt="Colored Bars" />
       </div>
 
       <div className="event-details">
-
-      {props.innerWidth > 1024 ? (
+        {/* The layout of event name will change if the screen width is 1024px or smaller */}
+        {props.innerWidth > 1024 ? (
           <div className="event-name">
             <span>Ready<br/></span> 
             <span>Set<br/></span> 

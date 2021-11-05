@@ -1,6 +1,9 @@
 import React from 'react';
+
+// Stylings
 import "../styles/sponsors.css";
 
+// Assets
 import buoyr from  "../../../../assets/images/png/BuoyrDark.png";
 import dataCampDonates from  "../../../../assets/images/png/DataCampDonate.png";
 import dgy from  "../../../../assets/images/png/DGYAcademy.png";
@@ -41,7 +44,6 @@ const Sponsors = () => {
                     <div className="sponsor-logo">
                         <img src={kadaKareer} alt="KadaKareer" className="kada-kareer"/>
                     </div>
-
                 </div>
             </div>
             

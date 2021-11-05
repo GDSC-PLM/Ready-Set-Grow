@@ -7,7 +7,6 @@
 .sponsors .sponsors-container {
     width: 1440px;
     max-width: 80%;
-    /* background: rgb(84, 118, 80); */
     display: grid;
     grid-template-columns: 20% 80%;
     margin: 0 auto;
@@ -18,41 +17,51 @@
 }
 
 .section-header h3 {
+    /* positioning */
     position: absolute;
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
-    transition: 200ms;
+
+    /* typography */
     font-size: 28px;
     color: #858585;
+
+    /* animation */
+    transition: 200ms;
 }
 
 
 .sponsors .sponsors-container .sponsor-logos {
-    /* background: rgba(185, 233, 255, 1); */
     display: flex;
     flex-wrap: wrap;
 }
 
 .sponsors .sponsors-container .sponsor-logo {
     height: 160px;
-    width: 300px;
-    /* background: rgb(255, 221, 221); */
     margin: 4px auto;
     position: relative;
+    width: 300px;
 }
 
 .sponsors .sponsors-container .sponsor-logo img {
-    max-width: 90%;
-    max-height: 90%;
-    margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 200ms;
+    /* positioning */
     position: absolute;
     left: 0;
     right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* box model */
+    max-height: 90%;
+    max-width: 90%;
+    
+    /* typography */
     text-align: center;
+
+    /* animation */
+    transition: 200ms;
 }
 
 .sponsors .sponsor-logo .buoyr {

@@ -1,179 +1,202 @@
 .schedule {
-    height: 1200px;
+  /* positioning */
+  position: relative;
 
-    font-family: 'Google Sans';
-    font-style: regular;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  /* box model */
+  height: 1200px;
+  overflow: hidden;
 
-    overflow: hidden;
-    /* background:rgb(167, 167, 167); */
-    position: relative;
+  /* typography */
+  font-family: "Google Sans";
+  font-style: regular;
+  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 .schedule .background-img {
-    position: absolute;
-    z-index: 0;
-    width: 1440px;
-    max-width: 120%;
-    margin: 20px auto auto auto;
-    left: -10%;
-    right: -10%;
+  /* positioning */
+  left: -10%;
+  margin: 20px auto auto auto;
+  position: absolute;
+  right: -10%;
+  z-index: 0;
+
+  /* box model */
+  width: 1440px;
+  max-width: 120%;
 }
 
 .schedule .main-content {
-    z-index: 1;
-    position: absolute;
-
-    margin: auto;
-    left: 0;
-    right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
 
-
 .schedule h2 {
-    font-size: 56px;
-    font-weight: 700;
-    text-align: center;
-    width: 1200px;
-    max-width: 80%;
-    margin: 100px auto 0 auto;
+  /* box model */
+  width: 1200px;
+  max-width: 80%;
+  margin: 100px auto 0 auto;
+
+  /* typography */
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .schedule p {
-    font-size: 24px;
-    text-align: center;
-    width: 500px;
-    max-width: 80%;
-    margin: 0 auto;
+  font-size: 24px;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  width: 500px;
 }
 
 .schedule .day-selector-container {
-    width: 1320px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    margin: 80px auto 0 auto;
-    /* background: rgb(255, 175, 175); */
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-    border-bottom: 1px solid #C4C4C4;
-    cursor: pointer;
+  /* positioning */
+  align-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  margin: 80px auto 0 auto;
+
+  /* box model */
+  border-bottom: 1px solid #c4c4c4;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  max-width: 80%;
+  width: 1320px;
+
+  /* misc */
+  cursor: pointer;
 }
 
 .schedule .day-option {
-    display: grid;
-    height: 120px;
-    width: 100%;
-    grid-template-rows: 20% 70% 10%;
-    text-align: center;
-    margin: 0 auto;
-    /* background: greenyellow; */
+  /* positioning */
+  margin: 0 auto;
 
+  /* box model */
+  display: grid;
+  height: 120px;
+  width: 100%;
+  grid-template-rows: 20% 70% 10%;
+
+  /* typography */
+  text-align: center;
 }
 
 .schedule .day-option .day-number {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .schedule .day-option .month-n-date {
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 2em;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 2em;
+  text-align: center;
 }
 
 .schedule .day-option .highlight-container {
-    background: linear-gradient(268.35deg, #F44336 19.42%, #FFD54F 83.57%);
-    border-radius: 24px;
-    width: 0;
-    transition: 300ms ease-in-out;
+  background: linear-gradient(268.35deg, #f44336 19.42%, #ffd54f 83.57%);
+  border-radius: 24px;
+  transition: 300ms ease-in-out;
+  width: 0;
 }
 
-.schedule .day-option .active{
-    transition: 300ms ease-in-out;
-    width: 100%;
+.schedule .day-option .active {
+  transition: 300ms ease-in-out;
+  width: 100%;
 }
 
 .schedule .speakers-of-the-day {
-    width: 1200px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+  /* positioning */
+  margin: 100px auto 0 auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
 
-    margin: 100px auto 0 auto;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
+  /* box model */
+  width: 1200px;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
 }
 
 .schedule .speaker {
-    height: 440px;
-    width: 224px;
-    /* background:rgb(145, 255, 216); */
+  height: 440px;
+  width: 224px;
+  /* background:rgb(145, 255, 216); */
 }
 
 .schedule .speaker .photo-container {
-    background: rgb(167, 167, 167);
-    height: 224px;
+  background: rgb(167, 167, 167);
+  height: 224px;
 }
 
 .schedule .speaker .photo-container img {
-    width: 100%;
-    z-index: 2;
+  width: 100%;
+  z-index: 2;
 }
 
 .schedule .speaker .talk-details-container {
-    position: relative;
-    height: 50%;
+  position: relative;
+  height: 50%;
 }
 
 .schedule .speaker .tag {
-    color: #EA4335;
-    height: 2.2em;
-    width: 4em;
-    border-radius: 8px;
-    text-align: center;
-    justify-content: center;
-    background: #EDEDED;
-    display: inline-flex;
-    align-items: center;
-    margin: 12px 0;
-    font-weight: 600;
+  /* positioning */
+  margin: 12px 0;
+  justify-content: center;
+  align-items: center;
+
+  /* box model */
+  height: 2.2em;
+  width: 4em;
+  border-radius: 8px;
+  display: inline-flex;
+
+  /* typography */
+  color: #ea4335;
+  text-align: center;
+  font-weight: 600;
+
+  /* visual */
+  background: #ededed;
 }
 
 .schedule .speaker .speaker-name {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
 }
 
 .schedule .speaker .organization {
-    font-size: 14px;
-    margin: 8px 0;
-    text-align: left;
-    color: #676C72;
+  color: #676c72;
+  font-size: 14px;
+  margin: 8px 0;
+  text-align: left;
 }
 
 .schedule .speaker .talk-title {
-    font-size: 15px;
-    color: #434343;
+  color: #434343;
+  font-size: 15px;
 }
 
 .schedule .speaker .talk-time {
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 14px;
-    bottom: 0;
-    position: absolute;
+  bottom: 0;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 14px;
+  position: absolute;
 }
 
 .schedule .speaker .talk-time svg {
-    margin-right: 4px;
-    font-size: 20px;
-    vertical-align: top;
+  font-size: 20px;
+  margin-right: 4px;
+  vertical-align: top;
 }
