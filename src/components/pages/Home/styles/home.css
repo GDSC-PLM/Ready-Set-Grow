@@ -1,148 +1,30 @@
-
 .add-testing-border {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-}
-
-.pre-event-hero {
-    position: relative;
-    height: 90vh;
-    max-height: 1100px;
-    overflow: hidden;
-    /* background:rgb(240, 255, 187); */
-    padding-left: 10%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
 }
 
 .home-page {
-    padding-top: 80px; 
-    height: 100%;   
+  padding-top: 80px;
+  height: 100%;
 }
 
-.home-page .colored-bars {
-    position: absolute;
-    right: -7%;
-    bottom: -10%;
-    justify-items: bottom;
-    z-index: 0;
-}
-
-.home-page .colored-bars img {
-    position: relative;
-    bottom: 0;
+@media (max-width: 820px) {
+  .home-page {
+    padding-top: 60px;
     height: 100%;
+  }
 }
 
-.home-page .coming-soon {
-    width: 600px;
-    z-index: 1;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Google Sans';
-    font-style: regular;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 200ms;
+@media (max-width: 820px) {
+    .home-page {
+      padding-top: 60px;
+    }
 }
 
-.home-page .coming-soon h3 {
-    /* font-family: 'Open Sans', sans-serif; */
-    font-size: 90px;
-    font-weight: 400;
-    margin: 0 auto;   
-    width: 95%;
-}
+@media (max-width: 540px) {
+    .home-page {
+        padding-top: 50px;
+      }
 
-.home-page .coming-soon .count-down {
-    margin: 28px auto 0 auto;
-}
-
-.home-page .coming-soon .count-down th {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.home-page .coming-soon .count-down .attr {
-    min-width: 95px;
-    max-width: 95px;
-}
-
-.home-page .coming-soon .count-down tbody {
-    font-size: 78px;
-    /* background: blue; */
-    vertical-align: top;
-    line-height: 100%;
-}
-
-.home-page .coming-soon .count-down td {
-    padding-top: 0;
-    vertical-align: top;
-    text-align: center;
-    font-weight: 400;
-}
-
-.home-page .coming-soon .count-down .value {
-    width: 100px;
-    min-width: 95px;
-    max-width: 95px;
-}
-
-
-
-
-
-.home-page .coming-soon p {
-    font-size: 24px;
-    font-weight: 400;
-    width: 95%;
-    align-self: center;
-    margin: 0 auto;
-}
-
-.home-page .coming-soon .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
-}
-
-
-.home-page .coming-soon a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-
-
-    width: 204px;
-    height: 64px;
-
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
-}
-
-
-.home-page .coming-soon .register-btn {
-    border: 2px solid #FFD772;
-    box-sizing: border-box;
-    border-radius: 28px;
-    margin-right: 0;
-}
-
-.home-page .coming-soon .learn-more-btn {
-    margin-left: 40px;
-    text-align: left;
-}
-
-
-.gap {
-    height: 80vh;
-    background: rgb(245, 245, 245);
 }

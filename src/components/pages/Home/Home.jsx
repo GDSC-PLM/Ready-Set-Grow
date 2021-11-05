@@ -11,11 +11,14 @@ export default class Home extends Component {
   render() {
     return (
         <section className="home-page">
-          {/* <InEventHero/> */}
-          <PreEventHero/>
-          <AboutTheEvent/>
+          <InEventHero
+            innerWidth={this.props.innerWidth}
+            innerHeight={this.props.innerHeight}
+          />
+          {/* <PreEventHero/> */}
+          {/* <AboutTheEvent/>
           <Sponsors/>
-          <Schedule/>
+          <Schedule/> */}
         </section>
     );
   }
