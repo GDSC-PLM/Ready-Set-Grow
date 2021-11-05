@@ -1,120 +1,139 @@
 .in-event-hero {
+  /*positioning*/
+  padding-left: 10%;
   position: relative;
+
+  /* box model*/
   height: 90vh;
   max-height: 1100px;
   overflow: hidden;
-  /* background:rgb(240, 255, 187); */
-  padding-left: 10%;
 }
 
 .in-event-hero .colored-bars-2 {
+  /*positioning*/
   position: absolute;
   right: -14%;
   bottom: -36%;
   justify-items: bottom;
   z-index: 0;
+
+  /* box model */
   height: 115vh;
 
+  /* animation */
   transition: 200ms ease-in-out;
 }
 
 .in-event-hero .colored-bars-2 img {
-  position: relative;
+   /*positioning*/
   bottom: 0;
   height: 100%;
+  position: relative;
 
+  /* animation */
   transition: 200ms ease-in-out;
 }
 
 .in-event-hero .event-details {
-  width: 700px;
-  z-index: 1;
-  /* font-family: 'Open Sans', sans-serif; */
-  font-family: "Google Sans";
-  font-style: regular;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-
+  /* positioning */
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
-  /* background: rgb(190, 255, 230); */
+  z-index: 1;
 
+  /* box model */
+  width: 700px;
+  
+  /* typography */
+  font-family: "Google Sans";
+  font-style: regular;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+
+  /* animation */
   transition: 200ms ease-in-out;
 }
 
 .in-event-hero .event-name {
-  /* font-family: 'Open Sans', sans-serif; */
-  font-size: 90px;
-  /* margin: 0 auto;    */
+  /* box model */
   width: 95%;
+
+  /* typography */
   font-size: 124px;
   font-weight: 600;
   line-height: 1em;
 
+  /* animation */
   transition: 300ms ease-in-out;
 }
 
-.in-event-hero .event-name :nth-child(1) {
-  color: #f44336;
-}
-.in-event-hero .event-name :nth-child(2) {
-  color: #fbbf0e;
-}
-.in-event-hero .event-name :nth-child(3) {
-  color: #66bb6a;
-}
+.in-event-hero .event-name :nth-child(1) { color: #f44336; }
+.in-event-hero .event-name :nth-child(2) { color: #fbbf0e; }
+.in-event-hero .event-name :nth-child(3) { color: #66bb6a; }
+
 
 .in-event-hero .date-of-event {
+  /* positioning */
   margin: 24px 0 0 4px;
-  font-size: 36px;
-  font-weight: 400;
+
+  /* box model */
   width: 95%;
 
+  /* typography */
+  font-size: 36px;
+  font-weight: 400;
+
+  /* animation */
   transition: 200ms ease-in-out;
 }
 
 .in-event-hero .tagline {
-  margin: 16px 0 0 4px;
   font-size: 24px;
-  width: 95%;
-
+  margin: 16px 0 0 4px;
   transition: 200ms ease-in-out;
+  width: 95%;
 }
 
 .in-event-hero .btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* background: lightblue; */
+  /* positioning */
   margin-top: 36px;
   align-items: center;
 
+  /* box model */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* animation */
   transition: 200ms ease-in-out;
 }
 
 .in-event-hero .event-details a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  /* positioning */
   margin: 0 auto;
 
-  width: 204px;
+  /* box model */
+  display: flex;
+  flex-direction: column;
   height: 64px;
+  justify-content: center;
+  width: 204px;
 
+  /* typography */
+  text-align: center;
   font-size: 24px;
   text-decoration: none;
   color: black;
 
+  /* animation */
   transition: 200ms ease-in-out;
 }
 
 .in-event-hero .event-details .register-btn {
+  background-color: #FFFF;
+  border-radius: 28px;
   border: 2px solid #ffd772;
   box-sizing: border-box;
-  border-radius: 28px;
   margin-right: 0;
 }
 
@@ -123,388 +142,175 @@
   text-align: left;
 }
 
-/* ==== Width: 1440px ==== */
+
+
+
+
+/* ======== HD Screens ======== */
+/* Width: 1440px  */
 
 @media (max-width: 1440px) {
-  .in-event-hero .colored-bars-2 {
-    position: absolute;
-    right: -14%;
-    bottom: -36%;
-    justify-items: bottom;
-    z-index: 0;
-    height: 115vh;
-  }
-
-  .in-event-hero .colored-bars-2 img {
-    position: relative;
-    bottom: 0;
-    height: 100%;
-
-    transition: 300ms ease-in-out;
-  }
-
+  
   .in-event-hero .event-details {
     width: 680px;
-    z-index: 1;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: "Google Sans";
-    font-style: regular;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-      format("woff2");
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    transition: 200ms;
   }
 
   .in-event-hero .event-name {
-    /* font-family: 'Open Sans', sans-serif; */
-    /* margin: 0 auto;    */
-    width: 95%;
     font-size: 110px;
-    font-weight: 600;
-    line-height: 1em;
-  }
-
-  .in-event-hero .event-name :nth-child(1) {
-    color: #f44336;
-  }
-  .in-event-hero .event-name :nth-child(2) {
-    color: #fbbf0e;
-  }
-  .in-event-hero .event-name :nth-child(3) {
-    color: #66bb6a;
+    width: 95%;
   }
 
   .in-event-hero .date-of-event {
-    margin: 24px 0 0 4px;
     font-size: 30px;
+    margin: 24px 0 0 4px;
   }
 
   .in-event-hero .tagline {
-    margin: 16px 0 0 4px;
     font-size: 20px;
+    margin: 16px 0 0 4px;
   }
 
-  .in-event-hero .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
-  }
 
   .in-event-hero .event-details a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-
+    /* box model*/
     width: 180px;
     height: 56px;
 
+    /* typography */
     font-size: 20px;
     text-decoration: none;
     color: black;
   }
-
-  .in-event-hero .event-details .register-btn {
-    border: 2px solid #ffd772;
-    box-sizing: border-box;
-    border-radius: 28px;
-    margin-right: 0;
-    background: #ffff;
-  }
-
-  .in-event-hero .event-details .learn-more-btn {
-    margin-left: 40px;
-    text-align: left;
-  }
 }
 
+
+
+
+
+/* Screen Width of iMac */
 /* ==== Width: 1280px  Height(Best): 720px ==== */
 
 @media (max-width: 1280px) {
   .in-event-hero .colored-bars-2 {
-    position: absolute;
-    right: -14%;
-    bottom: -36%;
-    justify-items: bottom;
-    z-index: 0;
-    height: 115vh;
-
-    /* Changes */
     max-height: 1180px;
   }
 
-  .in-event-hero .colored-bars-2 img {
-    position: relative;
-    bottom: 0;
-    height: 100%;
-  }
-
   .in-event-hero .event-details {
-    width: 680px;
-    z-index: 1;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: "Google Sans";
-    font-style: regular;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-      format("woff2");
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    transition: 200ms;
-
-    /* Changes */
     width: 560px;
   }
 
   .in-event-hero .event-name {
-    width: 95%;
-    font-size: 110px;
-    font-weight: 600;
-    line-height: 1em;
-    font-size: 110px;
-
-    /* Changes */
     font-size: 100px;
   }
 
-  .in-event-hero .event-name :nth-child(1) {
-    color: #f44336;
-  }
-  .in-event-hero .event-name :nth-child(2) {
-    color: #fbbf0e;
-  }
-  .in-event-hero .event-name :nth-child(3) {
-    color: #66bb6a;
-  }
-
   .in-event-hero .date-of-event {
-    margin: 24px 0 0 4px;
-    font-size: 30px;
-
-    /* Changes */
     font-size: 28px;
   }
 
   .in-event-hero .tagline {
-    margin: 16px 0 0 4px;
-    font-size: 20px;
-
-    /* Changes */
     font-size: 18px;
   }
 
-  .in-event-hero .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
-  }
-
   .in-event-hero .event-details a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    width: 180px;
-    height: 56px;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-
     /* Changes */
     font-size: 18px;
     height: 48px;
     width: 160px;
   }
-
-  .in-event-hero .event-details .register-btn {
-    border: 2px solid #ffd772;
-    box-sizing: border-box;
-    border-radius: 28px;
-    margin-right: 0;
-    background: #ffff;
-  }
-
-  .in-event-hero .event-details .learn-more-btn {
-    margin-left: 40px;
-    text-align: left;
-  }
 }
 
+
+
+
+
+/* ==== Medium screen width ==== */
 /* ==== Width: 1024px ===== */
 
 @media (max-width: 1024px) {
   .in-event-hero {
-    position: relative;
-    height: 100vh;
-    max-height: 1366px;
-    overflow: hidden;
-    background: rgb(240, 255, 187);
-    padding-left: 10%;
-
-    /* Changes */
     height: 94vh;
     max-height: 900px;
     padding: 0;
   }
 
   .in-event-hero .colored-bars-2 {
-    position: absolute;
-    right: -14%;
-    bottom: -36%;
-    justify-items: bottom;
-    z-index: 0;
-    height: 115vh;
-
-    /* Changes */
-    max-height: 1180px;
-    height: auto;
-    width: 720px;
+    /* positioning*/
     left: 0;
     right: 0;
-    text-align: center;
     margin: 0 auto;
 
-    /* background: rgb(255, 179, 179); */
+    /* box model */
+    height: auto;
+    max-height: 1180px;
+    width: 720px;
+    
+    /* typography */
+    text-align: center;
   }
 
   .in-event-hero .colored-bars-2 img {
-    position: relative;
-    bottom: 0;
-    height: auto;
-
-    /*Changes*/
     width: 90%;
   }
 
   .in-event-hero .event-details {
-    width: 680px;
-    z-index: 1;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: "Google Sans";
-    font-style: regular;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-      format("woff2");
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    transition: 200ms;
-
-    /* Changes */
-    width: 800px;
-
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    top: 30%;
-    margin: auto;
+    /* positioning */
     left: 0;
     right: 0;
+    top: 30%;
+    margin: auto;
+
+    /* box model */
+    width: 100%;
+    max-width: 100%;
+
+    /* typography */
+    text-align: center;
   }
 
   .in-event-hero .event-name {
-    width: 95%;
-    font-size: 110px;
-    font-weight: 600;
-    line-height: 1em;
-    font-size: 110px;
-
-    /* Changes */
     font-size: 90px;
-
     margin: 0;
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
 
-  .in-event-hero .event-name :nth-child(1) {
-    color: #f44336;
-  }
-  .in-event-hero .event-name :nth-child(2) {
-    color: #fbbf0e;
-  }
-  .in-event-hero .event-name :nth-child(3) {
-    color: #66bb6a;
-  }
 
   .in-event-hero .date-of-event {
-    margin: 24px 0 0 4px;
-    font-size: 30px;
-
-    /* Changes */
     font-size: 28px;
-
-    margin: 24px auto auto auto;
+    margin-top: 24px;
   }
 
   .in-event-hero .tagline {
-    margin: 16px 0 0 4px;
-    font-size: 20px;
-
-    /* Changes */
     font-size: 18px;
-
-    margin: 16px auto auto auto;
+    margin-top: 16px;
   }
 
   .in-event-hero .btn-container {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    /* background: lightblue; */
     margin-top: 36px;
-    align-items: center;
   }
 
   .in-event-hero .event-details a {
-    display: flex;
-    flex-direction: column;
+    /* positioning */
     justify-content: center;
-    text-align: center;
     margin: 0 auto;
-    width: 180px;
-    height: 56px;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
 
-    /* Changes */
-    font-size: 18px;
+    /* box model */
     height: 48px;
     width: 160px;
+
+    /* typography */
+    text-align: center;
+    font-size: 18px;
   }
 
   .in-event-hero .event-details .register-btn {
-    border: 2px solid #ffd772;
-    box-sizing: border-box;
-    border-radius: 28px;
-    margin-right: 0;
-    background: #ffff;
-
-    /* Changes */
     margin-right: 16px;
   }
 
   .in-event-hero .event-details .learn-more-btn {
-    margin-left: 40px;
-    text-align: left;
-
-    /* Changes */
     margin-left: 16px;
   }
 }
@@ -513,179 +319,62 @@
 
 
 
-
-
-
-
-/* Width: 834   */
+/* ===== Tablets ====== */
+/* Width: 834px  */
 @media (max-width: 834px) {
   .in-event-hero {
-    position: relative;
-    height: 100vh;
-    max-height: 1366px;
-    overflow: hidden;
-    background: rgb(240, 255, 187);
-    padding-left: 10%;
-
-    /* Changes */
-    height: 94vh;
-    max-height: 900px;
-    padding: 0;
-
     max-height: 720px;
   }
 
   .in-event-hero .colored-bars-2 {
-    position: absolute;
-    right: -14%;
-    bottom: -36%;
-    justify-items: bottom;
-    z-index: 0;
-    height: 115vh;
-
-    /* Changes */
-    max-height: 1180px;
-    height: auto;
-    width: 720px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    
     left: -120%;
     right: -120%;
-
-    /* background: rgb(255, 179, 179); */
   }
 
   .in-event-hero .colored-bars-2 img {
-    position: relative;
-    bottom: 0;
-    height: auto;
-
-    /*Changes*/
     width: 90%;
   }
 
   .in-event-hero .event-details {
-    width: 680px;
-    z-index: 1;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: "Google Sans";
-    font-style: regular;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-      format("woff2");
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    transition: 200ms;
-
-    /* Changes */
-    width: 800px;
-
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    top: 30%;
-    margin: auto;
+    /* positioning */
     left: 0;
     right: 0;
+    top: 30%;
+    margin: auto;
+
+    /* box model */
+    max-width: 100%;
+    width: 100%;
+
+    /* typography */
+    text-align: center;
   }
 
   .in-event-hero .event-name {
-    width: 95%;
-    font-size: 110px;
-    font-weight: 600;
-    line-height: 1em;
-    font-size: 110px;
-
-    /* Changes */
-    font-size: 90px;
-
-    margin: 0;
-    width: 100%;
-    text-align: center;
-
     font-size: 72px;
   }
 
-
-
   .in-event-hero .date-of-event {
-    margin: 24px 0 0 4px;
-    font-size: 30px;
-
-    /* Changes */
-    font-size: 28px;
-
-    margin: 24px auto auto auto;
-
-    margin: 16px auto auto auto;
     font-size: 24px;
+    margin: 16px auto auto auto;
   }
 
   .in-event-hero .tagline {
-    margin: 16px 0 0 4px;
-    font-size: 20px;
-
-    /* Changes */
-    font-size: 18px;
-
-    margin: 16px auto auto auto;
-
-    margin-top: 8px;
     font-size: 16px;
-  }
-
-  .in-event-hero .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
+    margin-top: 8px;
   }
 
   .in-event-hero .event-details a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    width: 180px;
-    height: 56px;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-
-    /* Changes */
-    font-size: 18px;
-    height: 48px;
-    width: 160px;
-
     font-size: 16px;
     height: 40px;
     width: 140px;
   }
 
   .in-event-hero .event-details .register-btn {
-    border: 2px solid #ffd772;
-    box-sizing: border-box;
-    border-radius: 28px;
-    margin-right: 0;
-    background: #ffff;
-
-    /* Changes */
     margin-right: 16px;
   }
 
   .in-event-hero .event-details .learn-more-btn {
-    margin-left: 40px;
-    text-align: left;
-
-    /* Changes */
     margin-left: 16px;
   }
 }
@@ -694,125 +383,55 @@
 
 
 
-
+/* === Small Tablets ==== */
 /* ===== Width: 680px ==== */
 
 @media (max-width: 680px) {
   .in-event-hero {
-    /* Changes */
     height: 94vh;
-    max-height: 720px;
     padding: 0;
   }
 
   .in-event-hero .colored-bars-2 {
-    /* Changes */
-    max-height: 1180px;
-    height: auto;
-    width: 720px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    
-    left: -120%;
-    right: -120%;
-
     width: 640px;
     bottom: -24%;
-
-    /* background: rgb(255, 179, 179); */
   }
 
   .in-event-hero .colored-bars-2 img {
-    /*Changes*/
     width: 90%;
   }
 
   .in-event-hero .event-details {
-    /* Changes */
-    width: 800px;
-
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    top: 30%;
-    margin: auto;
-    left: 0;
-    right: 0;
-
     max-width: 90%;
   }
 
   .in-event-hero .event-name {
-    /* Changes */
-    font-size: 90px;
-
-    margin: 0;
-    width: 100%;
-    text-align: center;
-
-    font-size: 72px;
-
     font-size: 60px;
   }
 
-
-
   .in-event-hero .date-of-event {
-    /* Changes */
-    font-size: 28px;
-
-    margin: 24px auto auto auto;
-
-    margin: 16px auto auto auto;
-    font-size: 24px;
-
     font-size: 20px;
   }
 
   .in-event-hero .tagline {
-    /* Changes */
-    font-size: 18px;
-
-    margin: 16px auto auto auto;
-
-    margin-top: 8px;
-    font-size: 16px;
-
     font-size: 14px;
   }
 
   .in-event-hero .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
-
     margin-top: 24px;
-
-
   }
 
   .in-event-hero .event-details a {
-    /* Changes */
-    font-size: 18px;
-    height: 48px;
-    width: 160px;
-
     font-size: 16px;
     height: 40px;
     width: 140px;
   }
 
   .in-event-hero .event-details .register-btn {
-    /* Changes */
     margin-right: 16px;
   }
 
   .in-event-hero .event-details .learn-more-btn {
-    /* Changes */
     margin-left: 20px;
   }
 }
@@ -820,136 +439,44 @@
 
 
 
+
+/* ====== Large Mobiles ====== */
 /* === Width 540px ==== */
 
 @media (max-width: 540px) {
-  .in-event-hero {
-    /* Changes */
-    height: 94vh;
-    max-height: 720px;
-    padding: 0;
-  }
-
-  .in-event-hero .colored-bars-2 {
-    /* Changes */
-    max-height: 1180px;
-    height: auto;
-    width: 720px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    
-    left: -120%;
-    right: -120%;
-
-    width: 640px;
-    bottom: -24%;
-
- 
-    /* background: rgb(255, 179, 179); */
-  }
 
   .in-event-hero .colored-bars-2 img {
-    /*Changes*/
     width: 90%;
   }
 
-  .in-event-hero .event-details {
-    /* Changes */
-    width: 800px;
-
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    top: 30%;
-    margin: auto;
-    left: 0;
-    right: 0;
-
-    max-width: 90%;
-  }
-
   .in-event-hero .event-name {
-    /* Changes */
-    font-size: 90px;
-
-    margin: 0;
-    width: 100%;
-    text-align: center;
-
-    font-size: 72px;
-
-    font-size: 60px;
-
     font-size: 48px;
   }
 
-
-
   .in-event-hero .date-of-event {
-    /* Changes */
-    font-size: 28px;
-
-    margin: 24px auto auto auto;
-
-    margin: 16px auto auto auto;
-    font-size: 24px;
-
-    font-size: 20px;
-
     font-size: 18px;
   }
 
   .in-event-hero .tagline {
-    /* Changes */
-    font-size: 18px;
-
-    margin: 16px auto auto auto;
-
-    margin-top: 8px;
-    font-size: 16px;
-
-    font-size: 14px;
-
     font-size: 13px;
     margin-top: 4px;
   }
 
   .in-event-hero .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
-
     margin-top: 24px;
-
-
   }
 
   .in-event-hero .event-details a {
-    /* Changes */
-    font-size: 18px;
-    height: 48px;
-    width: 160px;
-
-    font-size: 16px;
-    height: 40px;
-    width: 140px;
-
     font-size: 14px;
     height: 36px;
     width: 130px;
   }
 
   .in-event-hero .event-details .register-btn {
-    /* Changes */
     margin-right: 16px;
   }
 
   .in-event-hero .event-details .learn-more-btn {
-    /* Changes */
     margin-left: 20px;
   }
 }
@@ -958,8 +485,7 @@
 
 
 
-
-
+/* ====== Mobile Phones ====== */
 /* === Width 414px ==== */
 
 @media (max-width: 414px) {
@@ -971,143 +497,49 @@
   }
 
   .in-event-hero .colored-bars-2 {
-    /* Changes */
-    max-height: 1180px;
-    height: auto;
-    width: 720px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    
-    left: -120%;
-    right: -120%;
-
-    width: 640px;
-    bottom: -24%;
-
     width: 500px;
     bottom: -20%;
     left: -20%;
     right: -20%;
     max-width: 120%;
-
-    /* background: rgb(255, 179, 179); */
   }
 
   .in-event-hero .colored-bars-2 img {
-    /*Changes*/
     width: 90%;
   }
 
   .in-event-hero .event-details {
-    /* Changes */
-    width: 800px;
-
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    top: 30%;
-    margin: auto;
-    left: 0;
-    right: 0;
-
-    max-width: 90%;
-
     top: 25%;
   }
 
   .in-event-hero .event-name {
-    /* Changes */
-    font-size: 90px;
-
-    margin: 0;
-    width: 100%;
-    text-align: center;
-
-    font-size: 72px;
-
-    font-size: 60px;
-
-    font-size: 48px;
-
     font-size: 36px;
   }
 
 
   .in-event-hero .date-of-event {
-    /* Changes */
-    font-size: 28px;
-
-    margin: 24px auto auto auto;
-
-    margin: 16px auto auto auto;
-    font-size: 24px;
-
-    font-size: 20px;
-
-    font-size: 18px;
-
     font-size: 15px;
   }
 
   .in-event-hero .tagline {
-    /* Changes */
-    font-size: 18px;
-
-    margin: 16px auto auto auto;
-
-    margin-top: 8px;
-    font-size: 16px;
-
-    font-size: 14px;
-
-    font-size: 13px;
-    margin-top: 4px;
-
     font-size: 11px;
   }
 
   .in-event-hero .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
-
     margin-top: 24px;
   }
 
   .in-event-hero .event-details a {
-    /* Changes */
-    font-size: 18px;
-    height: 48px;
-    width: 160px;
-
-    font-size: 16px;
-    height: 40px;
-    width: 140px;
-
-    font-size: 14px;
-    height: 36px;
-    width: 130px;
-
     font-size: 11px;
   }
 
   .in-event-hero .event-details .register-btn {
-    /* Changes */
-    margin-right: 16px;
-
     height: 28px;
     width: 120px;
     margin-right: 16px;
   }
 
   .in-event-hero .event-details .learn-more-btn {
-    /* Changes */
-    margin-left: 20px;
-
     width: 100px;
     margin-left: 12px;
   }
@@ -1116,6 +548,7 @@
 
 
 
+/* ==== Galaxy Fold ==== */
 
 @media (max-width: 285px) and (max-height: 655px) {
   .in-event-hero {
@@ -1126,116 +559,38 @@
   }
 
   .in-event-hero .colored-bars-2 {
-    /* Changes */
-    max-height: 1180px;
-    height: auto;
-    width: 720px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    
-    left: -120%;
-    right: -120%;
-
-    width: 640px;
-    bottom: -24%;
-
     width: 500px;
-    bottom: -20%;
+    bottom: -10%;
     left: -20%;
     right: -20%;
     max-width: 120%;
-
-    /* background: rgb(255, 179, 179); */
   }
 
-  .in-event-hero .colored-bars-2 img {
-    /*Changes*/
-    width: 90%;
-  }
-
-  .in-event-hero .event-details {
-    top: 25%;
-  }
 
   .in-event-hero .event-name {
-    font-size: 36px;
-
     font-size: 30px;
   }
 
 
   .in-event-hero .date-of-event {
-    /* Changes */
-    font-size: 28px;
-
-    margin: 24px auto auto auto;
-
-    margin: 16px auto auto auto;
-    font-size: 24px;
-
-    font-size: 20px;
-
-    font-size: 18px;
-
-    font-size: 15px;
-    
     margin-top: 8px;
     font-size: 13px;
   }
 
   .in-event-hero .tagline {
-    /* Changes */
-    font-size: 18px;
-
-    margin: 16px auto auto auto;
-
-    margin-top: 8px;
-    font-size: 16px;
-
-    font-size: 14px;
-
-    font-size: 13px;
-    margin-top: 4px;
-
-    font-size: 11px;
-
     margin-top: 2px;
     font-size: 10px;
   }
 
   .in-event-hero .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
-
     margin-top: 24px;
   }
 
   .in-event-hero .event-details a {
-    /* Changes */
-    font-size: 18px;
-    height: 48px;
-    width: 160px;
-
-    font-size: 16px;
-    height: 40px;
-    width: 140px;
-
-    font-size: 14px;
-    height: 36px;
-    width: 130px;
-
     font-size: 11px;
   }
 
   .in-event-hero .event-details .register-btn {
-    /* Changes */
-    margin-right: 16px;
-
     height: 28px;
     width: 120px;
     margin-right: 16px;
@@ -1246,9 +601,6 @@
   }
 
   .in-event-hero .event-details .learn-more-btn {
-    /* Changes */
-    margin-left: 20px;
-
     width: 100px;
     margin-left: 0;
     text-align: center;

@@ -12,19 +12,22 @@ import { getCoreTeam, getPartners, getSponsors, getSpeakers, getCoPresenters } f
 
 
 export default class App extends Component {
+  // This is the state where the values/keys that can be used in different components are stored
+  // The value of innerWidth and innerHeight are just default values.
   state = {
     innerWidth: 1440,
     innerHeight: 720
   }
 
-
   componentDidMount() {
+    // These functions will be called as the website is loaded
     getCoreTeam();
     getPartners();
     getSponsors();
     getSpeakers();
     getCoPresenters();
 
+    // === This function will be called when you resize the window or clicked anywhere on the website ===
     window.addEventListener("resize", this.getInnerWidthAndHeight);
     window.addEventListener("click", this.getInnerWidthAndHeight);
   }
@@ -34,6 +37,7 @@ export default class App extends Component {
     window.removeEventListener("click", this.getInnerWidthAndHeight);
   }
 
+  // This function will get the height and width of the window
   getInnerWidthAndHeight = () => {
     this.setState({ innerWidth: window.innerWidth , innerHeight: window.innerHeight });
   }
@@ -42,7 +46,7 @@ export default class App extends Component {
     return (
       <main>
           <BrowserRouter>
-            {/* <Navbar/> */}
+            <Navbar/> 
 
             <Switch>
                   <Route path="/" exact render={(props) => <Home 
@@ -58,7 +62,7 @@ export default class App extends Component {
                   <Redirect to="/not-found"/>
             </Switch>
 
-            {/* <Footer/> */}
+            <Footer/>
           </BrowserRouter>
       </main>
     )

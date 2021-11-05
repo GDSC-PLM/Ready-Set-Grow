@@ -1,10 +1,14 @@
 .about-the-event {
+    /* box model */
     height: 400px;
-    background: #FFD872;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0);
 
+    /* visual */
+    background: #FFD872;
+
+    /* typography */
     font-family: 'Google Sans';
     font-style: regular;
     font-weight: 400;
@@ -14,15 +18,15 @@
 
 .about-the-event h2 {
     font-size: 64px;
+    margin: 40px auto;
+    max-width: 80%;
     text-align: center;
     width: 1440px;
-    max-width: 80%;
-    margin: 40px auto;
 }
 
 .about-the-event p {
     font-size: 20px;
-    width: 1440px;
-    max-width: 80%;
     margin: 0 auto;
+    max-width: 80%;
+    width: 1440px;
 }

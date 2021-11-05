@@ -1,7 +1,13 @@
 import React, { Component } from "react";
+
+// External Libraries
 import { FiClock } from "react-icons/fi";
+
+// Assets
 import { getEventTalks } from "../../../../assets/data/eventTalks";
 import background from "../../../../assets/images/png/colored-arrows.png"
+
+// Stylings
 import "../styles/schedule.css";
 
 export default class Schedule extends Component {
@@ -13,25 +19,26 @@ export default class Schedule extends Component {
 
   //=== LifeCycle Hooks ===
   componentDidMount = () => {
-    this.setTalksToBeDisplayed();
+    //This method will be called once the website has been loaded
     this.setTalksToBeDisplayed(1);
   };
 
+  // This method will set the talks to be displayed based on the the day that the user has selected
   setTalksToBeDisplayed = (selectedDay) => {
     let talks = {...this.state.eventTalks};
     let arrayOfTalks = Object.values(talks);
-
-    console.log(typeof(arrayOfTalks));
     let talksToDisplay = arrayOfTalks.filter((talk) => talk.day === selectedDay);
 
     this.setState({ displayedTalks: talksToDisplay });
   };
 
+  // This method will identify which day/date that the user has selected in the Day Selector
   setSelectedDay = (day) => {
     this.setState({selectedDay: day});
     this.setTalksToBeDisplayed(day);
   }
 
+  // This is the array of objects that contains the event dates. Dont remove or modify
   eventDates = [
     { dayNumber: 1, date: "Nov 22" },
     { dayNumber: 2, date: "Nov 23" },
@@ -40,6 +47,7 @@ export default class Schedule extends Component {
     { dayNumber: 5, date: "Nov 26" },
   ];
 
+  // This method will render the Day Selector 
   renderDaySelector = () => {
     return (
       <div className="day-selector-container">
@@ -56,6 +64,8 @@ export default class Schedule extends Component {
     );
   };
 
+  // This will render the cards of each speaker that contains information about them and the
+  // title of their talk.
   renderSpeakerCards = () => {
     return (
       <div className="speakers-of-the-day">
@@ -78,39 +88,6 @@ export default class Schedule extends Component {
             </div>
           );
         })}
-
-        {/* 
-        <div className="speaker">
-          <div className="photo-container"></div>
-          <div className="talk-details-container">
-            <span className="tag">Talk</span>
-            <h3 className="speaker-name">Raphael Francis Quisimbing</h3>
-            <p className="organization">Edukasyon.ph</p>
-            <div className="talk-title">
-              Upskill: Amplify your professional careers
-            </div>
-            <div className="talk-time">
-              <FiClock />
-              1:15 PM - 2:00 PM
-            </div>
-          </div>
-        </div>
-
-        <div className="speaker">
-          <div className="photo-container"></div>
-          <div className="talk-details-container">
-            <span className="tag">Talk</span>
-            <h3 className="speaker-name">Reimon Llorick Gutierrez</h3>
-            <p className="organization">Ambient Digital</p>
-            <div className="talk-title">
-              Land your Dream Job with Passion Project
-            </div>
-            <div className="talk-time">
-              <FiClock />
-              1:15 PM - 2:00 PM
-            </div>
-          </div>
-        </div> */}
       </div>
     );
   };
