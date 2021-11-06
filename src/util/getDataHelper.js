@@ -6,8 +6,15 @@ const {
     getCoPresentersDb,
 } = require("./firebase-init");
 
+/**
+ * Gets data from the coreTeam collection.
+ * @param {Array} order A string array composed of position names which will control the ordering of the output.
+ * @returns An object array containing data from the coreTeam collection from firebase.
+ */
 export async function getCoreTeam(order) {
     if (!order) {
+        // You can define a custom sort by passing an array on the order parameter
+        // or by modifying this default order array
         order = [
             "Chief Executive Officer",
             "Chief Operations Officer",
@@ -26,7 +33,11 @@ export async function getCoreTeam(order) {
     let idx, data;
     for (let i = 0; i < coreTeam.length; ++i) {
         data = coreTeam[i].value;
-        idx = order.indexOf(data.name);
+        data = JSON.stringify(data)
+            .replaceAll('name', 'position')
+            .replaceAll('fullName', 'name');
+        data = JSON.parse(data);
+        idx = order.indexOf(data.position);
 
         if (idx >= 0) {
             coreTeamOrdered[idx] = data;
@@ -34,7 +45,7 @@ export async function getCoreTeam(order) {
             coreTeamOrdered[order.length + i] = data;
         }
     }
-    console.log("coreTeam: ", coreTeamOrdered);
+    // console.log("coreTeam: ", coreTeamOrdered);
     return coreTeamOrdered;
 }
 

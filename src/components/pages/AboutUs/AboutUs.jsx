@@ -1,29 +1,45 @@
 import React, { Component } from "react";
 import "./styles/aboutUs.css";
 import DSClogo from "../../../assets/images2/AboutUs/dscLogo.png";
-import { getCoreTeam } from "../../../assets/data/coreTeam";
+import { getCoreTeam } from "../../../util/getDataHelper";
 
 // will put confetti tomorrow!
 
 export default class AboutUs extends Component {
-  coreTeam = getCoreTeam();
+  constructor(props) {
+    super(props);
+    this.state = {
+      coreTeam: [],
+    };
+  }
+
+  componentDidMount = async () => {
+    // You can define a custom output order via the parameter
+    // of getCoreTeam(), check function definition or jsdoc
+    this.setState({
+      coreTeam: await getCoreTeam(),  
+    });
+  }
 
   renderCoreTeam = () => {
     return (
       <div className="peopleCards">
-        {this.coreTeam.map((person) => {
+        {this.state.coreTeam.map((person) => {
           return (
             <div className="indivCard">
               <img
                 className="image"
-                src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/neil_christian_riego_aEd8xr3.png"
+                src={
+                  person.image ||
+                  "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/neil_christian_riego_aEd8xr3.png"
+                }
                 alt={person.name}
               ></img>
 
               <p className="personName">{person.name}</p>
               <p>{person.position}</p>
               <div className="btnDiv">
-                <a className="btnProfile">View Profile</a>
+                <a className="btnProfile" href={person.googleDeveloperProfile || person.linkedIn}>View Profile</a>
               </div>
             </div>
           );
