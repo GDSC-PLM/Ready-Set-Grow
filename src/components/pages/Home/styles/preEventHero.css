@@ -1,130 +1,499 @@
 .pre-event-hero {
-    position: relative;
-    height: 90vh;
-    max-height: 1100px;
-    overflow: hidden;
-    /* background:rgb(240, 255, 187); */
-    padding-left: 10%;
+  /* positioning */
+  position: relative;
+
+  /* box model */
+  height: 90vh;
+  max-height: 1100px;
+  overflow: hidden;
+  padding-left: 10%;
 }
 
 .pre-event-hero .colored-bars {
-    position: absolute;
-    right: -7%;
-    bottom: -10%;
-    justify-items: bottom;
-    z-index: 0;
+  bottom: -10%;
+  height: 95vh;
+  justify-items: bottom;
+  position: absolute;
+  right: -7%;
+  z-index: 0;
 }
 
 .pre-event-hero .colored-bars img {
-    position: relative;
-    bottom: 0;
-    height: 100%;
+  bottom: 0;
+  height: 100%;
+  position: relative;
 }
 
 .pre-event-hero .coming-soon {
-    width: 600px;
-    z-index: 1;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Google Sans';
-    font-style: regular;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  /* positioning */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 200ms;
+  /* box model */
+  width: 600px;
+
+  /* typography*/
+  font-family: "Google Sans";
+  font-style: regular;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+
+  /* animation */
+  transition: 200ms;
 }
 
 .pre-event-hero .coming-soon h3 {
-    /* font-family: 'Open Sans', sans-serif; */
-    font-size: 90px;
-    font-weight: 400;
-    margin: 0 auto;   
-    width: 95%;
+  font-size: 90px;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .pre-event-hero .coming-soon .count-down {
-    margin: 28px auto 0 auto;
+  margin: 28px auto 0 auto;
 }
 
 .pre-event-hero .coming-soon .count-down th {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .pre-event-hero .coming-soon .count-down .attr {
-    min-width: 95px;
-    max-width: 95px;
+  max-width: 95px;
+  min-width: 95px;
 }
 
 .pre-event-hero .coming-soon .count-down tbody {
-    font-size: 78px;
-    /* background: blue; */
-    vertical-align: top;
-    line-height: 100%;
+  font-size: 78px;
+  line-height: 100%;
+  vertical-align: top;
 }
 
 .pre-event-hero .coming-soon .count-down td {
-    padding-top: 0;
-    vertical-align: top;
-    text-align: center;
-    font-weight: 400;
+  font-weight: 400;
+  padding-top: 0;
+  text-align: center;
+  vertical-align: top;
 }
 
 .pre-event-hero .coming-soon .count-down .value {
-    width: 100px;
-    min-width: 95px;
-    max-width: 95px;
+  width: 100px;
+  min-width: 95px;
+  max-width: 95px;
 }
 
-
-
-
-
 .pre-event-hero .coming-soon p {
-    font-size: 24px;
-    font-weight: 400;
-    width: 95%;
-    align-self: center;
-    margin: 0 auto;
+  align-self: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .pre-event-hero .coming-soon .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* background: lightblue; */
-    margin-top: 36px;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
 }
-
 
 .pre-event-hero .coming-soon a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
+  /* positioning */
+  justify-content: center;
+  margin: 0 auto;
 
+  /* box model */
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  text-align: center;
+  width: 204px;
 
-    width: 204px;
-    height: 64px;
-
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
+  /* typography */
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-
 .pre-event-hero .coming-soon .register-btn {
-    border: 2px solid #FFD772;
-    box-sizing: border-box;
-    border-radius: 28px;
-    margin-right: 0;
+  background: #ffff;
+  border-radius: 28px;
+  border: 2px solid #ffd772;
+  box-sizing: border-box;
+  margin-right: 0;
 }
 
 .pre-event-hero .coming-soon .learn-more-btn {
-    margin-left: 40px;
-    text-align: left;
+  margin-left: 40px;
+  text-align: left;
+}
+
+
+
+/* HD 1440px */
+@media (max-width: 1440px) {
+  .pre-event-hero .coming-soon h3 {
+    font-size: 80px;
+  }
+
+  .pre-event-hero .coming-soon .count-down th {
+    font-size: 15px;
+  }
+
+  .pre-event-hero .coming-soon .count-down tbody {
+    font-size: 72px;
+  }
+
+  .pre-event-hero .coming-soon p {
+    font-size: 20px;
+  }
+
+  .pre-event-hero .coming-soon a {
+    font-size: 20px;
+    height: 58px;
+    width: 186px;
+  }
+}
+
+
+
+@media (max-width: 1280px) {
+  .pre-event-hero .coming-soon {
+    width: 560px;
+  }
+
+  .pre-event-hero .coming-soon h3 {
+    font-size: 64px;
+  }
+
+  .pre-event-hero .coming-soon .count-down {
+    margin: 28px auto 0 auto;
+  }
+
+  .pre-event-hero .coming-soon .count-down th {
+    font-size: 14px;
+  }
+
+  .pre-event-hero .coming-soon .count-down tbody {
+    font-size: 60px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .value {
+    width: 85px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+
+  .pre-event-hero .coming-soon p {
+    font-size: 16px;
+  }
+
+  .pre-event-hero .coming-soon a {
+    font-size: 16px;
+    height: 48px;
+    width: 164px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .pre-event-hero {
+    max-height: 900px;
+  }
+
+  .pre-event-hero .colored-bars {
+    /* positioning*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -30%;
+
+    /* box model */
+    height: auto;
+    max-height: 90%;
+    width: 800px;
+    max-width: 95%;
+
+    /* typography */
+    text-align: center;
+  }
+
+  .pre-event-hero .colored-bars img {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .pre-event-hero .coming-soon {
+    text-align: center;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .pre-event-hero .coming-soon h3 {
+    text-align: center;
+  }
+
+  .pre-event-hero .coming-soon .count-down {
+    margin: 28px auto 0 auto;
+  }
+
+  .pre-event-hero .coming-soon .count-down th {
+    font-size: 14px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .attr {
+    width: 85px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+
+  .pre-event-hero .coming-soon .count-down tbody {
+    font-size: 60px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .value {
+    width: 85px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+
+  .pre-event-hero .coming-soon p {
+    font-size: 16px;
+  }
+
+
+  .pre-event-hero .coming-soon a {
+    font-size: 16px;
+    height: 48px;
+    width: 164px;
+  }
+
+  .pre-event-hero .coming-soon .register-btn {
+    border-radius: 28px;
+    border: 2px solid #ffd772;
+    box-sizing: border-box;
+    margin-right: 4px;
+  }
+
+  .pre-event-hero .coming-soon .learn-more-btn {
+    margin-left: 4px;
+    text-align: center;
+  }
+}
+
+
+/* ===== Tablets ====== */
+/* Width: 834px  */
+@media (max-width: 834px) {
+  .pre-event-hero {
+    max-height: 720px;
+  }
+
+  .pre-event-hero .colored-bars {
+    bottom: -10%;
+    height: 95%;
+    justify-items: bottom;
+    position: absolute;
+    right: -7%;
+    z-index: 0;
+
+    /* Changes */
+    /* positioning*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -30%;
+
+    /* box model */
+    height: auto;
+    max-height: 95%;
+    width: 800px;
+    max-width: 95%;
+
+    /* typography */
+    text-align: center;
+  }
+
+  .pre-event-hero .coming-soon {
+    max-width: 80%;
+  }
+
+  .pre-event-hero .coming-soon h3 {
+    font-size: 60px;
+  }
+
+  .pre-event-hero .coming-soon .count-down th {
+    font-size: 13px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .attr {
+    min-width: auto;
+    max-width: none;
+    width: 20px;
+  }
+
+  .pre-event-hero .coming-soon .count-down tbody {
+    font-size: 48px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .value {
+    min-width: auto;
+    max-width: none;
+    width: 70px;
+    
+  }
+
+  .pre-event-hero .coming-soon p {
+    font-size: 16px;
+  }
+
+  .pre-event-hero .coming-soon a {
+    font-size: 16px;
+    height: 48px;
+    width: 164px;
+  }
+}
+
+
+/* ===== Large Mobile ====== */
+/* Width: 530px  */
+@media (max-width: 530px) {
+  .pre-event-hero {
+    /* Prev Changes */
+    max-height: 900px;
+
+    /* Changes */
+    max-height: 720px;
+  }
+
+  .pre-event-hero .colored-bars {
+    /* Changes */
+    /* positioning*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -30%;
+
+    /* box model */
+    height: auto;
+    max-height: 80%;
+    width: 800px;
+    max-width: 95%;
+
+    /* typography */
+    text-align: center;
+  }
+
+  .pre-event-hero .colored-bars img {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .pre-event-hero .coming-soon {
+    /* Prev Changes */
+    text-align: center;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    /* Changes */
+    max-width: 85%;
+  }
+
+  .pre-event-hero .coming-soon h3 {
+    font-size: 54px;
+  }
+
+  .pre-event-hero .coming-soon .count-down th {
+    font-size: 12px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .attr {
+    min-width: auto;
+    max-width: none;
+    width: 20px;
+  }
+
+  .pre-event-hero .coming-soon .count-down tbody {
+    font-size: 40px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .value {
+    min-width: auto;
+    max-width: none;
+    width: 70px;
+  }
+
+  .pre-event-hero .coming-soon p {
+    font-size: 14px;
+  }
+
+  .pre-event-hero .coming-soon .register-btn {
+    border-radius: 28px;
+    border: 2px solid #ffd772;
+    box-sizing: border-box;
+    margin-right: 0;
+  }
+
+  .pre-event-hero .coming-soon .learn-more-btn {
+    margin-left: 0;
+  }
+}
+
+
+/* ===== Mobile ====== */
+/* Width: 414px  */
+@media (max-width: 414px) {
+  .pre-event-hero {
+    max-height: 720px;
+  }
+
+  .pre-event-hero .coming-soon {
+    max-width: 85%;
+  }
+
+  .pre-event-hero .coming-soon h3 {
+    font-size: 36px;
+  }
+
+  .pre-event-hero .coming-soon .count-down th {
+    font-size: 11px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .attr {
+    width: 50px;
+  }
+
+  .pre-event-hero .coming-soon .count-down tbody {
+    font-size: 30px;
+  }
+
+  .pre-event-hero .coming-soon .count-down .value {
+    width: 50px;
+  }
+
+  .pre-event-hero .coming-soon p {
+    font-size: 11px;
+  }
+
+  .pre-event-hero .coming-soon .btn-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 36px;
+  }
+
+  .pre-event-hero .coming-soon a {
+     font-size: 12px;
+     height: 40px;
+     width: 112px;
+  }
 }

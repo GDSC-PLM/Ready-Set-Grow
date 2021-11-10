@@ -1,15 +1,14 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // External Libraries
 import Countdown, {zeroPad} from 'react-countdown';
-
 // Stylings
 import "../styles/preEventHero.css";
-
 //Assets
 import coloredBars from "../../../../assets/images/png/colored-bars.png";
+import coloredBarsSmall from "../../../../assets/images/png/colored-bars(small).png";
 
-const PreEventHero = () => {
+const PreEventHero = (props) => {
     const renderCountdownTimer = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
             // Render a completed state
@@ -49,7 +48,7 @@ const PreEventHero = () => {
     return (
     <div className="pre-event-hero">
         <div className="colored-bars">
-        <img src={coloredBars} alt="Colored Bars" />
+            <img src={props.innerWidth > 1024 ? coloredBars : coloredBarsSmall } /> 
         </div>
 
         <div className="coming-soon">
@@ -63,9 +62,9 @@ const PreEventHero = () => {
         <Countdown date={dateOfEvent} renderer={renderCountdownTimer} />
 
         <div className="btn-container">
-            <a className="register-btn" type="button">
+            <Link to="/form" className="register-btn" type="button">
                 Register Now
-            </a>
+            </Link>
             <a className="learn-more-btn" type="button">
                 Learn More
             </a>
