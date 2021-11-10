@@ -1,11 +1,10 @@
 import React from "react";
-
 // Assets
 import coloredBars2 from "../../../../assets/images/png/Illustration.png";
 import coloredBarsSmall2 from "../../../../assets/images/png/colored-bars-2(small).png";
-
 // Stylings
 import "../styles/inEventHero.css";
+
 
 const InEventHero = (props) => {
   // console.log(props.innerWidth);

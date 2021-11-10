@@ -1,12 +1,12 @@
 .in-event-hero {
   /*positioning*/
-  padding-left: 10%;
   position: relative;
 
   /* box model*/
   height: 90vh;
   max-height: 1100px;
   overflow: hidden;
+  padding-left: 10%;
 }
 
 .in-event-hero .colored-bars-2 {
@@ -19,6 +19,7 @@
 
   /* box model */
   height: 115vh;
+  max-height: 1360px;
 
   /* animation */
   transition: 200ms ease-in-out;
@@ -28,6 +29,7 @@
    /*positioning*/
   bottom: 0;
   height: 100%;
+
   position: relative;
 
   /* animation */

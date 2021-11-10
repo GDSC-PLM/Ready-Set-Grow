@@ -7,6 +7,7 @@ import Footer from "./components/common/Footer/Footer.jsx";
 import Home from "./components/pages/Home/Home.jsx";
 import Events from "./components/pages/Events/Events.jsx";
 import AboutUs from "./components/pages/AboutUs/AboutUs.jsx";
+import Form from "./components/pages/Form/Form.jsx";
 import NotFound from "./components/pages/NotFound/NotFound.jsx";
 import { getCoreTeam, getPartners, getSponsors, getSpeakers, getCoPresenters } from "./util/getDataHelper.js";
 
@@ -21,6 +22,7 @@ export default class App extends Component {
 
   componentDidMount() {
     // These functions will be called as the website is loaded
+    this.getInnerWidthAndHeight();
     getCoreTeam();
     getPartners();
     getSponsors();
@@ -53,6 +55,7 @@ export default class App extends Component {
                       innerHeight={this.state.innerHeight}
                       innerWidth={this.state.innerWidth}
                     />}/>
+                  <Route exact path="/form" component={Form}/> 
                   
                   <Route exact path="/events" component={Events}/> 
                   <Route exact path="/about-us" component={AboutUs}/> 
