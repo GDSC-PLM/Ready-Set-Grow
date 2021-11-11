@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // Assets
 import coloredBars2 from "../../../../assets/images/png/Illustration.png";
 import coloredBarsSmall2 from "../../../../assets/images/png/colored-bars-2(small).png";
@@ -49,9 +50,9 @@ const InEventHero = (props) => {
 
 
         <div className="btn-container">
-          <a className="register-btn" href="">
+          <Link to="/form" className="register-btn" href="">
             Register Now
-          </a>
+          </Link>
           <a className="learn-more-btn" href="">
             Learn More
           </a>
