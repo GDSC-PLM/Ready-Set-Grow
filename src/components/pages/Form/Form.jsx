@@ -9,6 +9,7 @@ const Form = () => {
       frameborder="0"
       marginheight="0"
       marginwidth="0"
+      title="GForms"
     >
       Loading…
     </iframe>

@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-
 // External Libraries
 import { FiClock } from "react-icons/fi";
-
 // Assets
 import { getEventTalks } from "../../../../assets/data/eventTalks";
 import background from "../../../../assets/images/png/colored-arrows.png"
-
 // Stylings
 import "../styles/schedule.css";
 
@@ -55,7 +52,7 @@ export default class Schedule extends Component {
           return (
             <div className="day-option" onClick={() => this.setSelectedDay(item.dayNumber)}>
               <div className="day-number">DAY {item.dayNumber}</div>
-              <div className="month-n-date">{item.date}</div>
+              { this.props.innerWidth > 540 ? <div className="month-n-date">{item.date}</div> : <></> }
               <div className={item.dayNumber === this.state.selectedDay ? "highlight-container active" : "highlight-container"}/>
             </div>
           );
@@ -95,7 +92,7 @@ export default class Schedule extends Component {
   render() {
     return (
       <div className="schedule">
-        <img src={background} className="background-img" alt="Background" />
+        {/* <img src={background} className="background-img" alt="Background" /> */}
 
         <div className="main-content">
           <h2>A Week of Career Building</h2>

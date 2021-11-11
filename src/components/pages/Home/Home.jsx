@@ -16,20 +16,24 @@ export default class Home extends Component {
     return (
         <section className="home-page">
           {/* Please choose only one between IneEventHero and PreEventHero to be displayed */}
-          {/* <InEventHero
-            innerWidth={this.props.innerWidth}
-            innerHeight={this.props.innerHeight}
-          /> */}
-          <PreEventHero
+          <InEventHero
             innerWidth={this.props.innerWidth}
             innerHeight={this.props.innerHeight}
           />
+          {/* <PreEventHero
+            innerWidth={this.props.innerWidth}
+            innerHeight={this.props.innerHeight}
+          /> */}
 
           {/* Please choose one of these to work on, and comment out the rest, so you can focus on
               making the stylings of your chosen component to be responsive */}
           <AboutTheEvent/>
           <Sponsors/>
-          <Schedule/>
+          
+           <Schedule
+            innerWidth={this.props.innerWidth}
+            innerHeight={this.props.innerHeight}
+           />
         </section>
     );
   }
