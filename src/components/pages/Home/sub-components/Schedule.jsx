@@ -3,20 +3,23 @@ import React, { Component } from "react";
 import { FiClock } from "react-icons/fi";
 // Assets
 import { getEventTalks } from "../../../../assets/data/eventTalks";
+import { getSpeakers } from "../../../../util/getDataHelper";
 import background from "../../../../assets/images/png/colored-arrows.png"
 // Stylings
 import "../styles/schedule.css";
 
 export default class Schedule extends Component {
   state = {
-    eventTalks: getEventTalks(),
+    // eventTalks: getSpeakers(),
+    eventTalks: [],
     selectedDay: 1,
     displayedTalks: [],
   };
 
   //=== LifeCycle Hooks ===
-  componentDidMount = () => {
+  componentDidMount = async () => {
     //This method will be called once the website has been loaded
+    this.setState({ eventTalks: await getSpeakers() });
     this.setTalksToBeDisplayed(1);
   };
 
@@ -24,7 +27,7 @@ export default class Schedule extends Component {
   setTalksToBeDisplayed = (selectedDay) => {
     let talks = {...this.state.eventTalks};
     let arrayOfTalks = Object.values(talks);
-    let talksToDisplay = arrayOfTalks.filter((talk) => talk.day === selectedDay);
+    let talksToDisplay = arrayOfTalks.filter((talk) => talk.day === selectedDay && talk.confirmed != false);
 
     this.setState({ displayedTalks: talksToDisplay });
   };
@@ -70,16 +73,16 @@ export default class Schedule extends Component {
           return (
             <div className="speaker">
               <div className="photo-container">
-                <img src={talk.picture.default} alt="speaker" />
+                <img src={talk.image} alt="speaker" />
               </div>
               <div className="talk-details-container">
-                <span className="tag">Talk</span>
-                <h3 className="speaker-name">{talk.speaker.name}</h3>
-                <p className="organization">{talk.speaker.organization}</p>
-                <div className="talk-title">{talk.title}</div>
+                <span className="tag">{talk.typeOfEvent}</span>
+                <h3 className="speaker-name">{talk.name}</h3>
+                <p className="organization">{talk.company}</p>
+                <div className="talk-title">{talk.titleOfTalk}</div>
                 <div className="talk-time">
                   <FiClock />
-                  {talk.time}
+                  {talk.timeOfEvent}
                 </div>
               </div>
             </div>
