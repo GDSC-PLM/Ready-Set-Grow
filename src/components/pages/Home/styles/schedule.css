@@ -3,7 +3,7 @@
   position: relative;
 
   /* box model */
-  height: 1200px;
+  height: 1500px;
   overflow: hidden;
 
   /* typography */
@@ -130,6 +130,7 @@
   max-width: 80%;
   display: grid;
   grid-template-columns: repeat(3, auto);
+  row-gap: 30px;
 }
 
 .schedule .speaker {

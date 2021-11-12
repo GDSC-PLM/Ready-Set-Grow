@@ -51,6 +51,7 @@
 .image {
   height: auto;
   width: 200px;
+  clip-path: circle(49%);
 }
 
 .coreTeamText {
