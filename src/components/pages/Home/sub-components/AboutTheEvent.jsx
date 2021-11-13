@@ -6,7 +6,7 @@ const AboutTheEvent = () => {
     <div className="about-the-event">
       <h2>About the Event</h2>
       <p>
-        Ready Set Grow is a week-long series of career and profile-building
+        <strong>Ready Set Grow</strong> is a week-long series of career and profile-building
         filled with webinars and workshops. The main goal is to gear up students
         towards their journey in the professional world through the activities
         prepared that would foster technology literacy, global competitiveness
