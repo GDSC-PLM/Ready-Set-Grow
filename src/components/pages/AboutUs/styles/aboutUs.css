@@ -4,10 +4,14 @@
 
   font-family: "Google Sans";
   font-style: regular;
-  font-weight: 400;
   src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
     format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+
+  background: url("../../../../assets/images/png/About-Us-bg.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .aboutUsDesc {
@@ -28,14 +32,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
   padding: 0px 120px 0px 120px;
 }
 
 .dscPlmLogo {
-  width: 50%;
+  width: 100%;
   height: 232px;
 }
-/* fix dimensions next time for mobile responsiveness */
 
 .personName {
   font-size: 21px;
@@ -51,6 +55,7 @@
 .image {
   height: auto;
   width: 200px;
+  border-radius: 50%;
 }
 
 .coreTeamText {
@@ -64,7 +69,7 @@
 }
 .peopleCards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
   align-items: center;
   justify-content: center;
@@ -91,8 +96,142 @@
   padding: 15px;
   cursor: pointer;
   color: rgb(82, 150, 246);
+  text-decoration: none !important;
+  background-color: #ffffff;
 }
 
 .btnProfile:hover {
   background-color: #f5fcff;
+}
+
+@media screen and (max-width: 800px) {
+  .about-us {
+    background: url("../../../../assets/images/png/About-Us-bg.png");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 30px;
+  }
+
+  
+  .orgText {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .dscPlmLogo {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .orgText p {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 70px 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-us {
+    background: url("../../../../assets/images/png/About-Us-bg.png");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 30px;
+  }
+
+  .aboutUsText {
+    font-size: 38px;
+    line-height: 61px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-weight: 700;
+  }
+
+  .coreTeamText {
+    font-size: 38px;
+    line-height: 61px;
+    display: block;
+    text-align: center;
+    margin: 10px 30px;
+    font-weight: 700;
+    margin-top: 90px;
+  }
+
+  .orgText {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0px 50px 0px 50px;
+  }
+
+  .dscPlmLogo {
+    /* align-items: center;
+    justify-content: center; */
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .orgText p {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 70px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-us {
+    background: url("../../../../assets/images/png/About-Us-bg.png");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 30px;
+  }
+
+  .aboutUsText {
+    font-size: 28px;
+    line-height: 61px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-weight: 700;
+  }
+
+  .coreTeamText {
+    font-size: 28px;
+    line-height: 61px;
+    display: block;
+    text-align: center;
+    margin: 10px 30px;
+    font-weight: 700;
+    margin-top: 90px;
+  }
+
+  .orgText {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0px 40px 0px 40px;
+  }
+
+  .dscPlmLogo {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* display: block; */
+    /* height: 100%; */
+  }
+
+  .orgText p {
+    font-size: 10px;
+    line-height: 23px;
+    margin: 70px 0px;
+  }
 }
