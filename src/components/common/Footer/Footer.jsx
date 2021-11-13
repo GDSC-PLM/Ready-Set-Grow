@@ -89,7 +89,6 @@ export default class Footer extends Component {
 
           </div>
         </div>
-
         <p>Copyright © 2021. GDSC- PLM. All rights Reserved</p>
 
         <div className="lastLine">
