@@ -3,8 +3,6 @@ import "./styles/aboutUs.css";
 import DSClogo from "../../../assets/images2/AboutUs/dscLogo.png";
 import { getCoreTeam } from "../../../util/getDataHelper";
 
-// will put confetti tomorrow!
-
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +35,7 @@ export default class AboutUs extends Component {
               ></img>
 
               <p className="personName">{person.name}</p>
-              <p>{person.position}</p>
+              <p className="personPosition">{person.position}</p>
               <div className="btnDiv">
                 <a className="btnProfile" href={person.googleDeveloperProfile || person.linkedIn}>View Profile</a>
               </div>
