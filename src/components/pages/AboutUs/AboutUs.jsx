@@ -3,8 +3,6 @@ import "./styles/aboutUs.css";
 import DSClogo from "../../../assets/images2/AboutUs/dscLogo.png";
 import { getCoreTeam } from "../../../util/getDataHelper";
 
-// will put confetti tomorrow!
-
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
