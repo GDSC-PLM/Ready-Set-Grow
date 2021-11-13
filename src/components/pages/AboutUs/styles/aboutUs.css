@@ -17,10 +17,11 @@
 .aboutUsDesc {
   justify-content: center;
   align-items: center;
+  
 }
 
 .aboutUsText {
-  font-size: 48px;
+  font-size: 47px;
   line-height: 61px;
   display: block;
   text-align: center;
@@ -41,8 +42,10 @@
   height: 232px;
 }
 
+/* Core team names */
+
 .personName {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700;
 }
 
@@ -52,14 +55,16 @@
   margin: 60px;
 }
 
+/* Core team Images */
+
 .image {
   height: auto;
-  width: 200px;
+  width: 170px;
   border-radius: 50%;
 }
 
 .coreTeamText {
-  font-size: 48px;
+  font-size: 47px;
   line-height: 61px;
   display: block;
   text-align: center;
@@ -69,17 +74,15 @@
 }
 .peopleCards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-auto-rows: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
-  grid-gap: 90px 10px;
-  margin: 80px 100px 300px 50px;
-}
-
-.indivCard {
-  margin-left: 60px;
+  grid-gap: 90px 0px;
+  margin: 150px 100px 150px 100px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 .btnDiv {
@@ -97,7 +100,6 @@
   cursor: pointer;
   color: rgb(82, 150, 246);
   text-decoration: none !important;
-  background-color: #ffffff;
 }
 
 .btnProfile:hover {
@@ -110,10 +112,13 @@
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
-    padding-top: 30px;
+    padding-top: 130px;
   }
 
-  
+  .aboutUsDesc {
+    margin-bottom: 60px;
+  }
+
   .orgText {
     display: block;
     align-items: center;
@@ -132,6 +137,51 @@
     line-height: 23px;
     margin: 70px 0px;
   }
+
+  .coreTeamText {
+    font-size: 47px;
+    line-height: 61px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+
+  
+  /* Core team names */
+  
+  .personName {
+    font-size: 19px;
+    font-weight: 700;
+  }
+  
+  
+  /* Core team Images */
+  
+  .image {
+    height: auto;
+    width: 170px;
+    border-radius: 50%;
+  }
+
+  .personPosition {
+    font-size: 14px;
+  }
+
+  .peopleCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 90px 0px;
+    margin: 150px 100px 150px 100px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -140,7 +190,7 @@
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
-    padding-top: 30px;
+    padding-top: 100px;
   }
 
   .aboutUsText {
@@ -150,6 +200,12 @@
     text-align: center;
     margin: 10px;
     font-weight: 700;
+  }
+
+  .orgText p {
+    font-size: 11px;
+    line-height: 23px;
+    margin: 70px 0px;
   }
 
   .coreTeamText {
@@ -171,18 +227,69 @@
   }
 
   .dscPlmLogo {
-    /* align-items: center;
-    justify-content: center; */
     margin: 0 auto;
     text-align: center;
     display: block;
   }
 
   .orgText p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 23px;
     margin: 70px 0px;
   }
+
+  .peopleCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 70px 0px;
+    margin: 50px 100px 50px 100px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  .image {
+    height: auto;
+    width: 120px;
+    border-radius: 50%;
+  }
+
+   /* Core team names */
+  
+   .personName {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .personPosition {
+    font-size: 13px;
+  }
+
+  .btnDiv {
+    margin-top: 40px;
+  }
+  
+  .btnProfile {
+    font-weight: normal;
+    font-size: 12px;
+    border-style: solid;
+    border-color: rgb(219, 221, 225);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 13px;
+    cursor: pointer;
+    color: rgb(82, 150, 246);
+    text-decoration: none !important;
+  }
+  
+  .btnProfile:hover {
+    background-color: #f5fcff;
+  }
+  
+
 }
 
 @media screen and (max-width: 400px) {
@@ -191,7 +298,7 @@
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
-    padding-top: 30px;
+    padding-top: 120px;
   }
 
   .aboutUsText {
@@ -225,13 +332,63 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    /* display: block; */
-    /* height: 100%; */
   }
 
   .orgText p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 23px;
     margin: 70px 0px;
   }
+
+  .peopleCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 70px 0px;
+    margin: 50px 100px 50px 100px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  .image {
+    height: auto;
+    width: 120px;
+    border-radius: 50%;
+  }
+
+   /* Core team names */
+  
+   .personName {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .personPosition {
+    font-size: 13px;
+  }
+
+  .btnDiv {
+    margin-top: 40px;
+  }
+  
+  .btnProfile {
+    font-weight: normal;
+    font-size: 12px;
+    border-style: solid;
+    border-color: rgb(219, 221, 225);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+    color: rgb(82, 150, 246);
+    text-decoration: none !important;
+  }
+  
+  .btnProfile:hover {
+    background-color: #f5fcff;
+  }
+  
 }

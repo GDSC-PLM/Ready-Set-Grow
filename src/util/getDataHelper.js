@@ -6,6 +6,26 @@ const {
     getCoPresentersDb,
 } = require("./firebase-init");
 
+const sortStringTime = (speakers) => {
+    // Sorry can't use Date objects here, our strings are not on a standard format
+    // pls forgib bad code from here on
+
+    // Convert each start time to number of mins since start of day
+    // ex. "1:15 PM" becomes 795
+    let sorted = speakers.map((speaker) => {
+        const [ timeStr, ampm ] = speaker.timeOfEvent.split(" ");
+        const [ hour, minutes ] = timeStr.split(":");
+
+        const pmOffset = (ampm == "PM") ? 60 * 12 : 0; // If PM, offset is 720, else 0
+        speaker.minsSinceDayStart = (parseInt(minutes) + ( parseInt(hour) * 60 ) + pmOffset);
+
+        return speaker;
+    });
+
+    sorted.sort((a, b) => a.minsSinceDayStart - b.minsSinceDayStart);
+    return sorted;
+};
+
 /**
  * Gets data from the coreTeam collection.
  * @param {Array} order A string array composed of position names which will control the ordering of the output.
@@ -16,6 +36,7 @@ export async function getCoreTeam(order) {
         // You can define a custom sort by passing an array on the order parameter
         // or by modifying this default order array
         order = [
+            "Faculty Adviser",
             "Chief Executive Officer",
             "Chief Operations Officer",
             "Chief Technology Officer",
@@ -59,6 +80,7 @@ export async function getCoPresenters() {
 export async function getSpeakers() {
     let speakers = await getSpeakersDb();
     speakers = speakers.map(elem => elem.value);
+    speakers = sortStringTime(speakers);
     console.log("speakers: ", speakers);
     return speakers;
 }

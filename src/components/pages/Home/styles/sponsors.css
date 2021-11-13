@@ -76,3 +76,43 @@
 .sponsors .sponsor-logo .kada-kareer {
     height: 90%;
 }
+
+@media (max-width: 1024px){
+    .sponsors .sponsors-container {
+        display:flex;
+        flex-direction: column;
+    }
+    .section-header h3{
+        padding-left: 13vh;
+    }
+}
+
+@media (max-width: 500px){
+    .sponsors-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-header h3{
+        position: absolute;
+        font-size: 13px;
+        padding-left: 6vh;
+        margin-top: 20px;
+    }
+    .sponsor-logos{
+        position:relative;
+        height: 70%;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 5vh;
+    }
+    .sponsor-logo{
+        position:absolute;
+        height: auto;
+        max-width:50%;
+    }
+    .sponsors .sponsor-logo .kada-kareer {
+        height: 50%;
+        margin-left: 100px;
+    }
+}

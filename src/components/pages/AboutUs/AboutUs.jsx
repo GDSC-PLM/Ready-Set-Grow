@@ -35,7 +35,7 @@ export default class AboutUs extends Component {
               ></img>
 
               <p className="personName">{person.name}</p>
-              <p>{person.position}</p>
+              <p className="personPosition">{person.position}</p>
               <div className="btnDiv">
                 <a className="btnProfile" href={person.googleDeveloperProfile || person.linkedIn}>View Profile</a>
               </div>
