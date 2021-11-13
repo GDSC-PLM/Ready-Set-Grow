@@ -3,6 +3,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0px;
+
   height: 100px;
   background: #ffffff;
   box-sizing: border-box;
@@ -151,6 +152,12 @@ nav p {
   .NavBarItems {
     position: relative;
     position: fixed;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .NavBarItems {
+    position: relative;
   }
 
   .nav-menu {
@@ -167,8 +174,8 @@ nav p {
     text-align: center;
     justify-content: center;
     padding: 0;
-    
   }
+  
   .first-three-menu {
     display: flex;
     flex-direction: column;
@@ -240,6 +247,47 @@ nav p {
 
   .nav-register-now-mobile {
     width: 50vw;
+    background-color: #ffd772;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    text-decoration: underline;
+    color: black;
+    background-size: auto;
+  }
+
+  .nav-register-now {
+    background-color: transparent;
+
+    border: none;
+    height: 100%;
+    /* padding: 0; */
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* width: 186px;
+    height: 58px;
+    left: 158px;
+    top: 0px; */
+    /* padding: 30px; */
+    display: none;
+  }
+
+  .nav-links-register {
+    color: #737373;
+    padding: 32px;
+    
+  }
+
+  .nav-links-register:hover {
+    color: black;
+  }
+
+  .nav-register-now:hover {
+    background-color: #ffd772;
+    border-radius: 0;
+    text-decoration: underline;
   }
 
   .menu-icon {

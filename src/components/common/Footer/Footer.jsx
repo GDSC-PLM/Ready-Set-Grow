@@ -14,7 +14,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { ReactComponent as DSCLogo } from "../../../assets/images2/Footer/svg/DSCLogo.svg";
 import BottomBars from "../../../assets/images2/Footer/png/Footer_GDSC_Branding_Colors.png";
-
 export default class Footer extends Component {
   render() {
     return (
@@ -24,7 +23,9 @@ export default class Footer extends Component {
         </div>
 
         <div className="socMedIcons">
-        <div className="media-screen-up">
+
+          <div className="media-screen-up">
+
             <a
               href="https://www.facebook.com/gdsc.plm"
               target="_blank"
@@ -70,7 +71,23 @@ export default class Footer extends Component {
             >
               <FaYoutube className="socMedIconsIndiv " />
             </a>
-
+            <a
+              href="https://github.com/GDSC-PLM"
+              target="_blank"
+              className="margin-spacing github-icon "
+            >
+              <FaGithub className="socMedIconsIndiv  " />
+            </a>
+            <a
+              href="https://discord.gg/F6UjYff3Tm"
+              target="_blank"
+              className="margin-spacing discord-icon"
+            >
+              <FaDiscord className="socMedIconsIndiv" />
+            </a>
+            
+          </div>
+        </div>
 
             <a
               href="https://github.com/GDSC-PLM"

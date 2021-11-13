@@ -28,6 +28,7 @@ footer p {
 
 .firstLine img {
   height: 51.54px;
+  /* height: 4vw; */
   margin: 20px 0px 15px 0px;
 }
 
@@ -36,11 +37,18 @@ footer p {
   justify-content: center;
   text-align: center;
   display: flex;
+  /* flex-wrap: wrap; */
   margin-bottom: 15px;
 }
 
+/* .socMedIcons > * {
+  flex: 1 1 10em;
+} */
+
+
 .socMedIconsIndiv {
   height: 28px;
+  /* height: 4vh; */
   width: auto;
   cursor: pointer;
   color: #ffffff;
@@ -51,8 +59,9 @@ footer p {
 }
 
 .DSCLogo {
-  height: 24.78px;
+  height: 22.78px;
   padding: 0px;
+  margin: 0px;
 }
 
 .BsLinkedin {
@@ -71,7 +80,6 @@ footer p {
   position: absolute;
   bottom: 0;
 }
-
 
 @media screen and (max-width: 700px) {
   .firstLine img {
@@ -128,4 +136,3 @@ footer p {
   .ig-icon {
     padding-right: 2px;
   }
-}
