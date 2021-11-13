@@ -6,6 +6,9 @@
     border-color: rgba(0, 0, 0, 0);
 
     /* visual */
+    padding-bottom: 60px;
+    overflow: auto;
+    height: 100%;
     background: #FFD872;
 
     /* typography */
@@ -25,8 +28,139 @@
 }
 
 .about-the-event p {
-    font-size: 20px;
+    font-size: 28px;
     margin: 0 auto;
     max-width: 80%;
+    text-align: justify;
     width: 1440px;
 }
+
+
+/* ======== HD Screens ======== */
+/* Width: 1440px  */
+
+@media (max-width: 1440px) {
+  
+  .about-the-event h2{
+    font-size: 60px;
+  }
+  .about-the-event p {
+    font-size: 26px;
+  }
+}
+  
+  
+  
+  
+  
+  /* Screen Width of iMac */
+  /* ==== Width: 1280px  Height(Best): 720px ==== */
+  
+  @media (max-width: 1280px) {
+
+    .about-the-event h2{
+        font-size: 54px;
+      }
+    .about-the-event p {
+        font-size: 26px;
+    }
+  }
+  
+  
+  
+  
+  
+  /* ==== Medium screen width ==== */
+  /* ==== Width: 1024px ===== */
+  
+  @media (max-width: 1024px) {
+
+    .about-the-event h2{
+        font-size: 50px;
+      }
+    .about-the-event p {
+        font-size: 22px;
+    } 
+  }
+  
+  
+  
+  
+  
+  /* ===== Tablets ====== */
+  /* Width: 834px  */
+  @media (max-width: 834px) {
+
+    .about-the-event h2{
+        font-size: 44px;
+      }
+    .about-the-event p {
+        font-size: 20px;
+    }
+  }
+  
+  
+  
+  
+  
+  /* === Small Tablets ==== */
+  /* ===== Width: 680px ==== */
+  
+  @media (max-width: 680px) {
+ 
+    .about-the-event h2{
+        font-size: 38px;
+      }
+    .about-the-event p { 
+        font-size: 18px;
+    } 
+  }
+  
+  
+  
+  
+  
+  /* ====== Large Mobiles ====== */
+  /* === Width 540px ==== */
+  
+  @media (max-width: 540px) {
+
+    .about-the-event h2{
+        font-size: 32px;
+      }
+    .about-the-event p {
+        font-size: 16px;
+    }
+  }
+  
+  
+  
+  
+  
+  /* ====== Mobile Phones ====== */
+  /* === Width 414px ==== */
+  
+  @media (max-width: 414px) {
+
+    .about-the-event h2{
+        font-size: 26px;
+      }
+    .about-the-event p {
+        font-size: 14px;
+    }
+  }
+  
+  
+  
+  
+  /* ==== Galaxy Fold ==== */
+  
+  @media (max-width: 285px) and (max-height: 655px) {
+  
+    .about-the-event h2{
+        font-size: 20px;
+      }
+    .about-the-event p {
+        font-size: 12px;
+    }
+  }
