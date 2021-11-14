@@ -12,11 +12,7 @@
     background: #FFD872;
 
     /* typography */
-    font-family: 'Google Sans';
-    font-style: regular;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-family: 'Google Sans', 'Open Sans';
 }
 
 .about-the-event h2 {

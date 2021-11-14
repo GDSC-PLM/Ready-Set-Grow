@@ -3,20 +3,16 @@
   position: relative;
 
   /* box model */
-  height: 1500px;
-  overflow: hidden;
+  /* height: 1200px;
+  overflow: hidden; */
 
   /* typography */
-  font-family: "Google Sans";
-  font-style: regular;
-  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  font-family: "Google Sans", "Open Sans";
 
   /* visual */
   background: url("../../../../assets/images/png/colored-arrows.png");
   background-repeat: repeat-y; 
-  background-size: clamp(800px, 96%, 1400px) auto;
+  background-size: clamp(350px, 96%, 1400px) auto;
   background-position: center;
 }
 
@@ -36,16 +32,16 @@
 .schedule .main-content {
   left: 0;
   margin: auto;
-  position: absolute;
   right: 0;
   z-index: 1;
+  padding: 6% 0 10% 0;
 }
 
 .schedule h2 {
   /* box model */
   width: 1200px;
   max-width: 80%;
-  margin: 100px auto 0 auto;
+  margin: 0px auto 0 auto;
 
   /* typography */
   font-size: 56px;
@@ -130,13 +126,13 @@
   max-width: 80%;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  row-gap: 30px;
 }
 
 .schedule .speaker {
   height: 440px;
   width: 224px;
   /* background:rgb(145, 255, 216); */
+  margin-bottom: 15%;
 }
 
 .schedule .speaker .photo-container {
@@ -173,6 +169,27 @@
 
   /* visual */
   background: #ededed;
+}
+
+
+.schedule .speaker .Ready {
+  background: #FFEBEE;
+  color: #EA4335;
+}
+
+.schedule .speaker .Set {
+  background: #faf0d1;
+  color: #ffbf00;
+}
+
+.schedule .speaker .Grow {
+  background: rgba(102, 187, 106, 0.15);
+  color: rgb(102, 187, 106);
+}
+
+.schedule .speaker .Talks {
+  background: rgba(73, 138, 244, 0.15);
+  color: rgb(73, 138, 244);
 }
 
 .schedule .speaker .speaker-name {
@@ -215,221 +232,33 @@
 /* === 1024px === */
 
 @media(max-width: 1024px) {
-  .schedule {
-    /* positioning */
-    position: relative;
-  
-    /* box model */
-    height: 1200px;
-    overflow: hidden;
-  }
-  
-  .schedule .background-img {
-    /* positioning */
-    left: -10%;
-    margin: 20px auto auto auto;
-    position: absolute;
-    right: -10%;
-    z-index: 0;
-  
-    /* box model */
-    width: 1440px;
-    max-width: 120%;
-  }
-  
-  .schedule .main-content {
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-  }
-  
   .schedule h2 {
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    margin: 100px auto 0 auto;
-  
-    /* typography */
-    font-size: 56px;
-    font-weight: 700;
-    text-align: center;
-
-    /* changes */
     font-size: 44px;
   }
   
   .schedule p {
-    font-size: 24px;
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: center;
-    width: 500px;
-
-    /* Changes */
     font-size: 20px;
   }
-  
-  .schedule .day-selector-container {
-    /* positioning */
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    margin: 80px auto 0 auto;
-  
-    /* box model */
-    border-bottom: 1px solid #c4c4c4;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    max-width: 80%;
-    width: 1320px;
-  
-    /* misc */
-    cursor: pointer;
-    max-width: 90%;
-  }
-  
-  .schedule .day-option {
-    /* positioning */
-    margin: 0 auto;
-  
-    /* box model */
-    display: grid;
-    height: 120px;
-    width: 100%;
-    grid-template-rows: 20% 70% 10%;
-  
-    /* typography */
-    text-align: center;
-    height: 80px;
-  }
-  
-  .schedule .day-option .day-number {
-    font-size: 28px;
 
-    /* Changes */
+  .schedule .day-option {
+    height: 88px;
+  }
+
+  .schedule .day-option .day-number {
     font-size: 20px;
   }
   
   .schedule .day-option .month-n-date {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 2em;
-    text-align: center;
-
-    /* changes */
     font-size: 32px;
   }
   
-  .schedule .day-option .highlight-container {
-    background: linear-gradient(268.35deg, #f44336 19.42%, #ffd54f 83.57%);
-    border-radius: 24px;
-    transition: 300ms ease-in-out;
-    width: 0;
-  }
-  
-  .schedule .day-option .active {
-    transition: 300ms ease-in-out;
-    width: 100%;
-  }
-  
   .schedule .speakers-of-the-day {
-    /* positioning */
-    margin: 100px auto 0 auto;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-  
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-
-    /* changes */
     max-width: 90%;
   }
   
-  .schedule .speaker {
-    height: 440px;
-    width: 224px;
-    /* background:rgb(145, 255, 216); */
-  }
-  
-  .schedule .speaker .photo-container {
-    background: rgb(167, 167, 167);
-    height: 224px;
-  }
-  
-  .schedule .speaker .photo-container img {
-    width: 100%;
-    z-index: 2;
-  }
-  
-  .schedule .speaker .talk-details-container {
-    position: relative;
-    height: 50%;
-  }
-  
   .schedule .speaker .tag {
-    /* positioning */
-    margin: 12px 0;
-    justify-content: center;
-    align-items: center;
-  
-    /* box model */
-    height: 2.2em;
-    width: 4em;
-    border-radius: 8px;
-    display: inline-flex;
-  
-    /* typography */
-    color: #ea4335;
-    text-align: center;
-    font-weight: 600;
-  
-    /* visual */
-    background: #ededed;
-
-    /* changes */
     margin-top: 16px;
   }
-  
-  .schedule .speaker .speaker-name {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .schedule .speaker .organization {
-    color: #676c72;
-    font-size: 14px;
-    margin: 8px 0;
-    text-align: left;
-  }
-  
-  .schedule .speaker .talk-title {
-    color: #434343;
-    font-size: 15px;
-  }
-  
-  .schedule .speaker .talk-time {
-    bottom: 0;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 14px;
-    position: absolute;
-  }
-  
-  .schedule .speaker .talk-time svg {
-    font-size: 20px;
-    margin-right: 4px;
-    vertical-align: top;
-  }  
 }
 
 
@@ -439,234 +268,38 @@
 /* === Tablet 834px === */
 
 @media(max-width: 834px) {
-  .schedule {
-    /* positioning */
-    position: relative;
-  
-    /* box model */
-    height: 1200px;
-    overflow: hidden;
-  }
-  
-  .schedule .background-img {
-    /* positioning */
-    left: -10%;
-    margin: 20px auto auto auto;
-    position: absolute;
-    right: -10%;
-    z-index: 0;
-  
-    /* box model */
-    width: 1440px;
-    max-width: 120%;
-  }
-  
-  .schedule .main-content {
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-  }
-  
   .schedule h2 {
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    margin: 100px auto 0 auto;
-  
-    /* typography */
-    font-size: 56px;
-    font-weight: 700;
-    text-align: center;
-
-    /* changes */
     font-size: 44px;
   }
   
-  .schedule p {
-    font-size: 24px;
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: center;
-    width: 500px;
-
-    /* Prev Changes */
-    font-size: 20px;
-  }
-  
-  .schedule .day-selector-container {
-    /* positioning */
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    margin: 80px auto 0 auto;
-  
-    /* box model */
-    border-bottom: 1px solid #c4c4c4;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    max-width: 80%;
-    width: 1320px;
-  
-    /* misc */
-    cursor: pointer;
-    max-width: 90%;
-  }
-  
-  .schedule .day-option {
-    /* positioning */
-    margin: 0 auto;
-  
-    /* box model */
-    display: grid;
-    height: 120px;
-    width: 100%;
-    grid-template-rows: 20% 70% 10%;
-  
-    /* typography */
-    text-align: center;
-    height: 80px;
-  }
-  
   .schedule .day-option .day-number {
-    font-size: 28px;
-
-    /* Changes */
     font-size: 20px;
   }
   
   .schedule .day-option .month-n-date {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 2em;
-    text-align: center;
-
-    /* changes */
     font-size: 32px;
   }
   
-  .schedule .day-option .highlight-container {
-    background: linear-gradient(268.35deg, #f44336 19.42%, #ffd54f 83.57%);
-    border-radius: 24px;
-    transition: 300ms ease-in-out;
-    width: 0;
-  }
-  
-  .schedule .day-option .active {
-    transition: 300ms ease-in-out;
-    width: 100%;
-  }
-  
   .schedule .speakers-of-the-day {
-    /* positioning */
-    margin: 100px auto 0 auto;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-  
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-
-    /* changes */
     max-width: 90%;
   }
   
   .schedule .speaker {
-    height: 440px;
-    width: 224px;
-    /* background:rgb(145, 255, 216); */
-
-    /* Changes */
     height: 460px;
     width: 178px;
   }
   
   .schedule .speaker .photo-container {
-    background: rgb(167, 167, 167);
-    height: 224px;
-    
-    /* Changes */
     height: 178px;
   }
   
-  .schedule .speaker .photo-container img {
-    width: 100%;
-    z-index: 2;
-  }
-  
-  .schedule .speaker .talk-details-container {
-    position: relative;
-    height: 50%;
-  }
-  
   .schedule .speaker .tag {
-    /* positioning */
-    margin: 12px 0;
-    justify-content: center;
-    align-items: center;
-  
-    /* box model */
-    height: 2.2em;
-    width: 4em;
-    border-radius: 8px;
-    display: inline-flex;
-  
-    /* typography */
-    color: #ea4335;
-    text-align: center;
-    font-weight: 600;
-  
-    /* visual */
-    background: #ededed;
-
-    /* Prev Changes */
-    margin-top: 16px;
-
-    /* Changes */
     font-size: 14px;
   }
   
   .schedule .speaker .speaker-name {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    margin: 0;
-
-    /* Changes */
     font-size: 20px;
   }
-  
-  .schedule .speaker .organization {
-    color: #676c72;
-    font-size: 14px;
-    margin: 8px 0;
-    text-align: left;
-  }
-  
-  .schedule .speaker .talk-title {
-    color: #434343;
-    font-size: 15px;
-  }
-  
-  .schedule .speaker .talk-time {
-    bottom: 0;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 14px;
-    position: absolute;
-  }
-  
-  .schedule .speaker .talk-time svg {
-    font-size: 20px;
-    margin-right: 4px;
-    vertical-align: top;
-  }  
 }
 
 
@@ -680,255 +313,61 @@
 /* === Tablet 680px === */
 
 @media(max-width: 680px) {
-  .schedule {
-    /* positioning */
-    position: relative;
-  
-    /* box model */
-    height: 900px;
-    overflow: hidden;
-  }
-  
-  .schedule .background-img {
-    /* positioning */
-    left: -10%;
-    margin: 20px auto auto auto;
-    position: absolute;
-    right: -10%;
-    z-index: 0;
-  
-    /* box model */
-    width: 1440px;
-    max-width: 120%;
-  }
-  
   .schedule .main-content {
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    z-index: 1;
+    padding-top: 10%;
   }
-  
+
   .schedule h2 {
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    margin: 100px auto 0 auto;
-  
-    /* typography */
-    font-size: 56px;
-    font-weight: 700;
-    text-align: center;
-
-    /* prev changes */
-    font-size: 44px;
-
-    /* changes */
     font-size: 36px;
   }
   
   .schedule p {
-    font-size: 24px;
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: center;
-    width: 500px;
-
-    /* Changes */
-    font-size: 20px;
-
-    /* changes */
     font-size: 18px;
   }
   
-  .schedule .day-selector-container {
-    /* positioning */
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    margin: 80px auto 0 auto;
-  
-    /* box model */
-    border-bottom: 1px solid #c4c4c4;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    max-width: 80%;
-    width: 1320px;
-  
-    /* misc */
-    cursor: pointer;
-    max-width: 90%;
-  }
-  
   .schedule .day-option {
-    height: 80px;
+    height: 64px;
   }
   
   .schedule .day-option .day-number {
-    font-size: 28px;
-
-    /* Prev Changes */
-    font-size: 20px;
-
-    /* Chnages */
     font-size: 16px;
   }
   
   .schedule .day-option .month-n-date {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 2em;
-    text-align: center;
-
-    /* prev changes */
-    font-size: 32px;
-
-    /* changes */
-    font-size: 28px;
-  }
-  
-  .schedule .day-option .highlight-container {
-    background: linear-gradient(268.35deg, #f44336 19.42%, #ffd54f 83.57%);
-    border-radius: 24px;
-    transition: 300ms ease-in-out;
-    width: 0;
-  }
-  
-  .schedule .day-option .active {
-    transition: 300ms ease-in-out;
-    width: 100%;
+    font-size: 24px;
   }
   
   .schedule .speakers-of-the-day {
-    /* positioning */
-    margin: 100px auto 0 auto;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-  
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-
-    /* prev changes */
-    max-width: 90%;
-
-    /* changes */
     margin-top: 60px;
   }
   
   .schedule .speaker {
-    height: 440px;
-    width: 224px;
-    /* background:rgb(145, 255, 216); */
-
-    /* Prev Changes */
-    height: 480px;
-    width: 178px;
-
-    /* changes */
     width: 150px;
     height: 460px;
   }
   
   .schedule .speaker .photo-container {
-    background: rgb(167, 167, 167);
-    height: 224px;
-    
-    /* Prev Changes */
-    height: 178px;
-
-    /* changes */
     height: 150px;
   }
   
-  .schedule .speaker .photo-container img {
-    width: 100%;
-    z-index: 2;
-  }
-  
-  .schedule .speaker .talk-details-container {
-    position: relative;
-    height: 50%;
-  }
-  
   .schedule .speaker .tag {
-    /* positioning */
-    margin: 12px 0;
-    justify-content: center;
-    align-items: center;
-  
-    /* box model */
-    height: 2.2em;
-    width: 4em;
-    border-radius: 8px;
-    display: inline-flex;
-  
-    /* typography */
-    color: #ea4335;
-    text-align: center;
-    font-weight: 600;
-  
-    /* visual */
-    background: #ededed;
-
-    /* prev changes */
-    margin-top: 16px;
-
-    /* changes */
     font-size: 15px;
+    height: 28px;
   }
   
   .schedule .speaker .speaker-name {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    margin: 0;
-
-    /* Prev Changes */
-    font-size: 20px;
-
-    /* changes */
     font-size: 18px;
   }
   
-  .schedule .speaker .organization {
-    color: #676c72;
-    font-size: 14px;
-    margin: 8px 0;
-    text-align: left;
-  }
-  
   .schedule .speaker .talk-title {
-    color: #434343;
-    font-size: 15px;
-
-    /* Changes */
     font-size: 14px;
   }
   
   .schedule .speaker .talk-time {
-    bottom: 0;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 14px;
-    position: absolute;
-
-    /* changes */
     font-size: 14px;
   }
   
   .schedule .speaker .talk-time svg {
-    font-size: 20px;
-    margin-right: 4px;
-    vertical-align: top;
-
-    /* changes */
     font-size: 16px;
   }  
 }
@@ -941,274 +380,68 @@
 /* === Large mobile 540px === */
 
 @media(max-width: 540px) {
-  .schedule {
-    /* positioning */
-    position: relative;
-  
-    /* box model */
-    height: 120vh;
-    overflow: hidden;
-  }
-  
-  .schedule .background-img {
-    /* positioning */
-    left: -10%;
-    margin: 20px auto auto auto;
-    position: absolute;
-    right: -10%;
-    z-index: 0;
-  
-    /* box model */
-    width: 1440px;
-    max-width: 120%;
-  }
-  
-  .schedule .main-content {
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-  }
-  
   .schedule h2 {
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    margin: 100px auto 0 auto;
-  
-    /* typography */
-    font-size: 56px;
-    font-weight: 700;
-    text-align: center;
-
-    /* prev changes */
-    font-size: 44px;
-
-    /* changes */
     font-size: 32px;
   }
   
   .schedule p {
-    font-size: 24px;
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: center;
-    width: 500px;
-
-    /* prev Changes */
-    font-size: 20px;
-
-    /* changes */
     font-size: 16px;
   }
   
-  .schedule .day-selector-container {
-    /* positioning */
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    margin: 80px auto 0 auto;
-  
-    /* box model */
-    border-bottom: 1px solid #c4c4c4;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    max-width: 80%;
-    width: 1320px;
-  
-    /* misc */
-    cursor: pointer;
-    max-width: 90%;
-  }
-  
   .schedule .day-option {
-
-
-    /* Changes */
     height: 30px;
     grid-template-rows: 60% 40%;
-
   }
   
   .schedule .day-option .day-number {
-    font-size: 28px;
-
-    /* Prev Changes */
-    font-size: 20px;
-
-    /* Chnages */
     font-size: 16px;
   }
   
   .schedule .day-option .month-n-date {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 2em;
-    text-align: center;
-
-    /* prev changes */
-    font-size: 32px;
-
-    /* prev changes */
-    font-size: 28px;
-
-    /* changes */
     display: none;
   }
   
   .schedule .day-option .highlight-container {
-    background: linear-gradient(268.35deg, #f44336 19.42%, #ffd54f 83.57%);
-    border-radius: 24px;
-    transition: 300ms ease-in-out;
-    width: 0;
-    
-    /* Changes */
-    height: 6px;
-  }
-  
-  .schedule .day-option .active {
-    transition: 300ms ease-in-out;
-    width: 100%;
+    height: 5px;
+    margin-top: 3px;
   }
   
   .schedule .speakers-of-the-day {
-    /* positioning */
-    margin: 100px auto 0 auto;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-  
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-
-    /* prev changes */
-    max-width: 90%;
-
-    /* changes */
-    margin-top: 60px;
-
-    /* changes */
     display: flex;
     flex-wrap: wrap;
   }
   
   .schedule .speaker {
-    height: 440px;
-    width: 224px;
-    /* background:rgb(145, 255, 216); */
-
-    /* Prev Changes */
-    height: 480px;
-    width: 178px;
-
-    /* changes */
     width: 150px;
     height: 460px;
+    margin-bottom: 0;
   }
   
   .schedule .speaker .photo-container {
-    background: rgb(167, 167, 167);
-    height: 224px;
-    
-    /* Prev Changes */
-    height: 178px;
-
-    /* changes */
     height: 150px;
   }
   
-  .schedule .speaker .photo-container img {
-    width: 100%;
-    z-index: 2;
-  }
-  
-  .schedule .speaker .talk-details-container {
-    position: relative;
-    height: 50%;
-  }
-  
   .schedule .speaker .tag {
-    /* positioning */
-    margin: 12px 0;
-    justify-content: center;
-    align-items: center;
-  
-    /* box model */
-    height: 2.2em;
-    width: 4em;
-    border-radius: 8px;
-    display: inline-flex;
-  
-    /* typography */
-    color: #ea4335;
-    text-align: center;
-    font-weight: 600;
-  
-    /* visual */
-    background: #ededed;
-
-    /* prev changes */
-    margin-top: 16px;
-
-    /* changes */
-    font-size: 15px;
+    font-size: 14px;
+    height: 28px;
   }
   
   .schedule .speaker .speaker-name {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    margin: 0;
-
-    /* Prev Changes */
-    font-size: 20px;
-
-    /* changes */
     font-size: 18px;
   }
-  
-  .schedule .speaker .organization {
-    color: #676c72;
-    font-size: 14px;
-    margin: 8px 0;
-    text-align: left;
-  }
-  
+   
   .schedule .speaker .talk-title {
-    color: #434343;
-    font-size: 15px;
-
-    /* Changes */
     font-size: 14px;
   }
   
   .schedule .speaker .talk-time {
-    bottom: 0;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 14px;
-    position: absolute;
-
-    /* changes */
     font-size: 14px;
   }
   
   .schedule .speaker .talk-time svg {
-    font-size: 20px;
-    margin-right: 4px;
-    vertical-align: top;
-
-    /* changes */
     font-size: 16px;
   }  
 }
-
 
 
 
@@ -1217,165 +450,35 @@
 
 @media(max-width: 414px) {
   .schedule {
-    /* positioning */
-    position: relative;
-  
-    /* box model */
-    height: 1200px;
-    overflow: hidden;
+    background-size: clamp(380px, 98%, 1400px) auto;
+  }
 
-    /* changes */
-    padding-bottom: 40px;
-  }
-  
-  .schedule .background-img {
-    /* positioning */
-    left: -10%;
-    margin: 20px auto auto auto;
-    position: absolute;
-    right: -10%;
-    z-index: 0;
-  
-    /* box model */
-    width: 1440px;
-    max-width: 120%;
-  }
-  
-  .schedule .main-content {
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-  }
-  
   .schedule h2 {
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    margin: 100px auto 0 auto;
-  
-    /* typography */
-    font-size: 56px;
-    font-weight: 700;
-    text-align: center;
-
-    /* changes */
-    font-size: 44px;
-
-    /* changes */
     max-width: 90%;
     font-size: 28px;
   }
   
   .schedule p {
-    font-size: 24px;
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: center;
-    width: 500px;
-
-    /* prev Changes */
-    font-size: 20px;
-
-    /* changes */
     max-width: 90%;
     font-size: 14px;
   }
   
-  .schedule .day-selector-container {
-    /* positioning */
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    margin: 80px auto 0 auto;
-  
-    /* box model */
-    border-bottom: 1px solid #c4c4c4;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    max-width: 80%;
-    width: 1320px;
-  
-    /* misc */
-    cursor: pointer;
-    max-width: 90%;
-  }
-  
   .schedule .day-option {
-
-
-    /* Changes */
     height: 30px;
     grid-template-rows: 60% 40%;
-
   }
   
   .schedule .day-option .day-number {
-    font-size: 28px;
-
-    /* Prev Changes */
-    font-size: 20px;
-
-    /* Chnages */
     font-size: 16px;
   }
   
   .schedule .day-option .month-n-date {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 2em;
-    text-align: center;
-
-    /* prev changes */
-    font-size: 32px;
-
-    /* prev changes */
-    font-size: 28px;
-
-    /* changes */
     display: none;
   }
   
-  .schedule .day-option .highlight-container {
-    background: linear-gradient(268.35deg, #f44336 19.42%, #ffd54f 83.57%);
-    border-radius: 24px;
-    transition: 300ms ease-in-out;
-    width: 0;
-    
-    /* Changes */
-    height: 6px;
-  }
-  
-  .schedule .day-option .active {
-    transition: 300ms ease-in-out;
-    width: 100%;
-  }
-  
   .schedule .speakers-of-the-day {
-    /* positioning */
-    margin: 100px auto 0 auto;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-  
-    /* box model */
-    width: 1200px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-
-    /* prev changes */
-    max-width: 90%;
-
-    /* changes */
     margin-top: 60px;
-
-    /* prev changes */
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 85%;
   }
   
   .schedule .speaker {
@@ -1393,104 +496,31 @@
 
     /* changes */
     width: 140px;
+    height: 460px;
   }
   
   .schedule .speaker .photo-container {
-    background: rgb(167, 167, 167);
-    height: 224px;
-    
-    /* Prev Changes */
-    height: 178px;
-
-    /* changes */
-    height: 150px;
-
-    /* changes */
     height: 140px;
   }
   
-  .schedule .speaker .photo-container img {
-    width: 100%;
-    z-index: 2;
-  }
-  
-  .schedule .speaker .talk-details-container {
-    position: relative;
-    height: 50%;
-  }
-  
   .schedule .speaker .tag {
-    /* positioning */
-    margin: 12px 0;
-    justify-content: center;
-    align-items: center;
-  
-    /* box model */
-    height: 2.2em;
-    width: 4em;
-    border-radius: 8px;
-    display: inline-flex;
-  
-    /* typography */
-    color: #ea4335;
-    text-align: center;
-    font-weight: 600;
-  
-    /* visual */
-    background: #ededed;
-
-    /* prev changes */
-    margin-top: 16px;
-
-    /* changes */
-    font-size: 15px;
+    font-size: 12px;
+    height: 24px;
   }
   
   .schedule .speaker .speaker-name {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    margin: 0;
-
-    /* Prev Changes */
-    font-size: 20px;
-
-    /* changes */
     font-size: 18px;
   }
   
-  .schedule .speaker .organization {
-    color: #676c72;
-    font-size: 14px;
-    margin: 8px 0;
-    text-align: left;
-  }
-  
   .schedule .speaker .talk-title {
-    color: #434343;
-    font-size: 15px;
-
-    /* Changes */
     font-size: 14px;
   }
   
   .schedule .speaker .talk-time {
-    bottom: 0;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 14px;
-    position: absolute;
-
-    /* changes */
     font-size: 14px;
   }
   
   .schedule .speaker .talk-time svg {
-    font-size: 20px;
-    margin-right: 4px;
-    vertical-align: top;
-
-    /* changes */
     font-size: 16px;
   }  
 }
@@ -1502,15 +532,7 @@
 
 @media(max-width: 310px) {
   .schedule {
-    /* positioning */
-    position: relative;
-  
-    /* box model */
-    height: 1800px;
-    overflow: hidden;
-
-    /* changes */
-    padding-bottom: 40px;
+    background-size: clamp(240px, 112%, 1400px) auto;
   }
 }
 

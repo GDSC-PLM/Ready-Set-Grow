@@ -59,21 +59,22 @@ export default class Footer extends Component {
             </a>
           </div >
 
-            <div className="media-screen-down">
-              <a
-                href="https://www.instagram.com/gdsc_plm/"
-                target="_blank"
-                className="margin-spacing ig-icon"
-              >
-                <FaInstagram className="socMedIconsIndiv" />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UC1Jd3Cb99nMdCp9_VHIWeag"
-                target="_blank"
-                className="margin-spacing yt-icon"
-              >
-                <FaYoutube className="socMedIconsIndiv " />
-              </a>
+
+          <div className="media-screen-down">
+            <a
+              href="https://www.instagram.com/gdsc_plm/"
+              target="_blank"
+              className="margin-spacing ig-icon"
+            >
+              <FaInstagram className="socMedIconsIndiv" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC1Jd3Cb99nMdCp9_VHIWeag"
+              target="_blank"
+              className="margin-spacing yt-icon"
+            >
+              <FaYoutube className="socMedIconsIndiv " />
+            </a>
 
               <a
                 href="https://github.com/GDSC-PLM"

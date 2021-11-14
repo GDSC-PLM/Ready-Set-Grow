@@ -16,7 +16,7 @@ const sortStringTime = (speakers) => {
         const [ timeStr, ampm ] = speaker.timeOfEvent.split(" ");
         const [ hour, minutes ] = timeStr.split(":");
 
-        const pmOffset = (ampm == "PM") ? 60 * 12 : 0; // If PM, offset is 720, else 0
+        const pmOffset = (ampm === "PM") ? 60 * 12 : 0; // If PM, offset is 720, else 0
         speaker.minsSinceDayStart = (parseInt(minutes) + ( parseInt(hour) * 60 ) + pmOffset);
 
         return speaker;

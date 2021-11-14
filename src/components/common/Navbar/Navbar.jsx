@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import "./styles/navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import logo from "../../../assets/images2/NavBar/Ready-Set-Grow_Logo 1.png";
 
 function Navbar() {
@@ -8,6 +8,35 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const handleScrollClick = (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute("href");
+    let location;
+    
+    try {
+      location = document.querySelector("#events").offsetTop;
+      console.log(location);
+    }
+    catch (ex) {
+      location = 1958;
+    }
+
+    console.log(location);
+    
+    window.scrollTo({
+      left: 0,
+      top: location
+    });
+  }
+
+
+  const history = useHistory();
+
+  const routeChange = () =>{ 
+    let path = ""; 
+    history.push(path);
+  }
 
   return (
     <nav className="NavBarItems">
@@ -25,14 +54,15 @@ function Navbar() {
 
             <div className="first-three-menu">
               <li className="nav-item">
-                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}> 
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/events" className="nav-links" onClick={closeMobileMenu}>
+
+              <li className="nav-item" onMouseDown={routeChange}>
+                <a className="nav-links" onClick={closeMobileMenu} onMouseUp={handleScrollClick}>
                   Events
-                </Link>
+                </a>
               </li>
 
               <li className="nav-item">
@@ -47,7 +77,7 @@ function Navbar() {
 
             <div className="two-last-menu">
               <li className="nav-learn-more">
-                <Link to="/learn-more" className="nav-links" onClick={closeMobileMenu}>
+                <Link to="/learn-more" className="nav-links learn-moree" onClick={closeMobileMenu}>
                   Learn More
                 </Link>
               </li>
@@ -56,7 +86,8 @@ function Navbar() {
 
               <li className="nav-register-now">
 
-                <Link to="/register-now" className="nav-links-register" onClick={closeMobileMenu}>
+                <Link to="/register" className="nav-links-register" onClick={closeMobileMenu}>
+
                   Register Now
                 </Link>
               </li>
@@ -64,7 +95,7 @@ function Navbar() {
               {/* this is for the register now button mobile version */}
 
               <li className="nav-register-now-mobile">
-                <Link to="/register-now" className="nav-links-register-mobile" onClick={closeMobileMenu}>
+                <Link to="/register" className="nav-links-register-mobile" onClick={closeMobileMenu}>
                   Register Now
                 </Link>
               </li>

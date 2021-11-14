@@ -73,12 +73,20 @@ export default class App extends Component {
             <Route exact path="/form" component={Form} />
 
 
-            {/* React scroll here */}
-            <Route exact path="/events" component={AboutTheEvent} />
-            <Route exact path="/about-us" component={AboutUs} />
-            <Route exact path="/not-found" component={NotFound}/> 
-            <Route exact path="/register-now" component={Form}/> 
-
+            <Switch>
+                  <Route path="/" exact render={(props) => <Home 
+                      innerHeight={this.state.innerHeight}
+                      innerWidth={this.state.innerWidth}
+                    />}/>
+                  <Route exact path="/register" component={Form}/> 
+                  
+                  <Route exact path="/events" component={Events}/> 
+                  <Route exact path="/about-us" component={AboutUs}/> 
+                  <Route exact path="/not-found" component={NotFound}/> 
+                  
+                  <Redirect from="/home" exact to="/"/>
+                  <Redirect to="/"/>
+            </Switch>
 
 
             {/* Not sure if this is optimal pero you can press back  */}
