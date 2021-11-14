@@ -1,16 +1,11 @@
 .about-us {
-  padding-top: 224px;
   box-sizing: border-box;
 
-  font-family: "Google Sans";
-  font-style: regular;
-  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  font-family: "Google Sans", "Open Sans";
 
-  background: url("../../../../assets/images/png/About-Us-bg.png");
+  /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
   background-repeat: repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: center;
 }
 
@@ -25,7 +20,7 @@
   line-height: 61px;
   display: block;
   text-align: center;
-  margin: 10px;
+  margin-top: 10%;
   font-weight: 700;
 }
 
@@ -34,11 +29,12 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 0px 120px 0px 120px;
+  margin: 40px auto 0 auto;
+  width: 1200px;
+  max-width: 80%;
 }
 
 .dscPlmLogo {
-  width: 100%;
   height: 232px;
 }
 
@@ -54,7 +50,7 @@
 .orgText p {
   font-size: 18px;
   line-height: 23px;
-  margin: 60px;
+  margin-left: 40px;
 }
 
 /* Core team Images */
@@ -74,17 +70,25 @@
   font-weight: 700;
   margin-top: 90px;
 }
+
 .peopleCards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
   grid-auto-rows: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
   grid-gap: 90px 0px;
-  margin: 150px 100px 150px 100px;
+  margin: 80px auto;
   padding-top: 10px;
   padding-bottom: 40px;
+  max-width: 80%;
+}
+
+.indivCard {
+  width: 240px;
 }
 
 .btnDiv {
@@ -102,16 +106,26 @@
   cursor: pointer;
   color: rgb(82, 150, 246);
   text-decoration: none !important;
-  background-color: #ffffff;
 }
 
 .btnProfile:hover {
   background-color: #f5fcff;
 }
 
+
+@media (max-width: 1280px) {
+  .orgText p {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
 @media screen and (max-width: 800px) {
   .about-us {
-    background: url("../../../../assets/images/png/About-Us-bg.png");
+    /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
@@ -138,7 +152,7 @@
   .orgText p {
     font-size: 15px;
     line-height: 23px;
-    margin: 70px 0px;
+    margin: 40px 0px;
   }
 
   .coreTeamText {
@@ -173,7 +187,7 @@
     font-size: 14px;
   }
 
-  .peopleCards {
+  /* .peopleCards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: auto;
@@ -184,13 +198,16 @@
     margin: 150px 100px 150px 100px;
     padding-top: 10px;
     padding-bottom: 40px;
-  }
-
+  } */
 }
+
+
+
+
 
 @media screen and (max-width: 550px) {
   .about-us {
-    background: url("../../../../assets/images/png/About-Us-bg.png");
+    /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
@@ -205,7 +222,6 @@
     margin: 10px;
     font-weight: 700;
   }
-
 
   .orgText p {
     font-size: 11px;
@@ -228,7 +244,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    padding: 0px 50px 0px 50px;
   }
 
   .dscPlmLogo {
@@ -239,11 +254,9 @@
 
   .orgText p {
     font-size: 13px;
-    line-height: 23px;
-    margin: 70px 0px;
   }
 
-  .peopleCards {
+  /* .peopleCards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: auto;
@@ -254,7 +267,7 @@
     margin: 50px 100px 50px 100px;
     padding-top: 10px;
     padding-bottom: 40px;
-  }
+  } */
 
   .image {
     height: auto;
@@ -299,7 +312,7 @@
 
 @media screen and (max-width: 400px) {
   .about-us {
-    background: url("../../../../assets/images/png/About-Us-bg.png");
+    /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
@@ -345,7 +358,7 @@
     margin: 70px 0px;
   }
 
-  .peopleCards {
+  /* .peopleCards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: auto;
@@ -356,7 +369,7 @@
     margin: 50px 100px 50px 100px;
     padding-top: 10px;
     padding-bottom: 40px;
-  }
+  } */
 
   .image {
     height: auto;

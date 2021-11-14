@@ -10,14 +10,13 @@ import AboutUs from "./components/pages/AboutUs/AboutUs.jsx";
 import Form from "./components/pages/Form/Form.jsx";
 import NotFound from "./components/pages/NotFound/NotFound.jsx";
 
-
 export default class App extends Component {
   // This is the state where the values/keys that can be used in different components are stored
   // The value of innerWidth and innerHeight are just default values.
   state = {
     innerWidth: 1440,
-    innerHeight: 720
-  }
+    innerHeight: 720,
+  };
 
   componentDidMount() {
     // These functions will be called as the website is loaded
@@ -35,34 +34,64 @@ export default class App extends Component {
 
   // This function will get the height and width of the window
   getInnerWidthAndHeight = () => {
-    this.setState({ innerWidth: window.innerWidth , innerHeight: window.innerHeight });
-  }
+    this.setState({
+      innerWidth: window.innerWidth,
+      innerHeight: window.innerHeight,
+    });
+  };
 
   render() {
     return (
       <main>
-          <BrowserRouter>
-            <Navbar/> 
+        <BrowserRouter>
+          <Navbar />
+
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={(props) => (
+                <Home
+                  innerHeight={this.state.innerHeight}
+                  innerWidth={this.state.innerWidth}
+                />
+              )}
+            />
+            <Route exact path="/form" component={Form} />
+
 
             <Switch>
                   <Route path="/" exact render={(props) => <Home 
                       innerHeight={this.state.innerHeight}
                       innerWidth={this.state.innerWidth}
                     />}/>
-                  <Route exact path="/form" component={Form}/> 
+                  <Route exact path="/register" component={Form}/> 
                   
                   <Route exact path="/events" component={Events}/> 
                   <Route exact path="/about-us" component={AboutUs}/> 
                   <Route exact path="/not-found" component={NotFound}/> 
                   
                   <Redirect from="/home" exact to="/"/>
-                  <Redirect to="/not-found"/>
+                  <Redirect to="/"/>
             </Switch>
 
-            <Footer/>
-          </BrowserRouter>
+
+            {/* Not sure if this is optimal pero you can press back  */}
+            <Route
+              path="/learn-more"
+              component={() => {
+                window.location.replace("https://www.facebook.com/gdsc.plm");
+                return null;
+              }}
+            />
+
+            <Redirect from="/home" exact to="/" />
+            <Redirect to="/not-found" />
+          </Switch>
+
+          <Footer />
+        </BrowserRouter>
       </main>
-    )
+    );
   }
 }
-

@@ -3,7 +3,7 @@
   position: relative;
 
   /* box model */
-  height: 90vh;
+  height: 95vh;
   max-height: 1100px;
   overflow: hidden;
   padding-left: 10%;
@@ -35,12 +35,7 @@
   width: 600px;
 
   /* typography*/
-  font-family: "Google Sans";
-  font-style: regular;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-    format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  font-family: "Google Sans", "Open Sans";
 
   /* animation */
   transition: 200ms;
@@ -125,6 +120,11 @@
   border: 2px solid #ffd772;
   box-sizing: border-box;
   margin-right: 0;
+  transition: 200ms ease-in-out;
+}
+
+.pre-event-hero .coming-soon .register-btn:hover {
+  background: #ffd772
 }
 
 .pre-event-hero .coming-soon .learn-more-btn {
@@ -203,7 +203,7 @@
 
 @media (max-width: 1024px) {
   .pre-event-hero {
-    max-height: 900px;
+    max-height: 1180px;
   }
 
   .pre-event-hero .colored-bars {
@@ -323,6 +323,7 @@
 
   .pre-event-hero .coming-soon {
     max-width: 80%;
+    margin-top: 6vh;
   }
 
   .pre-event-hero .coming-soon h3 {
@@ -370,6 +371,7 @@
     max-height: 900px;
 
     /* Changes */
+    height: 95vh;
     max-height: 720px;
   }
 
@@ -406,6 +408,7 @@
 
     /* Changes */
     max-width: 85%;
+    margin-top: 12%;
   }
 
   .pre-event-hero .coming-soon h3 {
@@ -443,6 +446,8 @@
     margin-right: 0;
   }
 
+
+
   .pre-event-hero .coming-soon .learn-more-btn {
     margin-left: 0;
   }
@@ -453,11 +458,13 @@
 /* Width: 414px  */
 @media (max-width: 414px) {
   .pre-event-hero {
+    height: 100vh;
     max-height: 720px;
   }
 
   .pre-event-hero .coming-soon {
     max-width: 85%;
+    margin-top: 6vh;
   }
 
   .pre-event-hero .coming-soon h3 {

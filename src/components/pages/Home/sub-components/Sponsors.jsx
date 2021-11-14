@@ -10,6 +10,8 @@ import dgy from  "../../../../assets/images/png/DGYAcademy.png";
 import edukasyonPH from  "../../../../assets/images/png/EdukasyonPH.png";
 import franchiseManila from  "../../../../assets/images/png/FranchiseManila.png";
 import kadaKareer from  "../../../../assets/images/png/KadaKareer.png";
+import engineeringWinsPH from  "../../../../assets/images/png/EngineeringWinsPH.png";
+import pointwest from  "../../../../assets/images/png/Pointwest.png";
 
 const Sponsors = () => {
     return (
@@ -34,7 +36,7 @@ const Sponsors = () => {
                     </div>
 
                     <div className="sponsor-logo">
-                        <img src={franchiseManila} alt="Franchise Manila" className="franchise-manila"/>
+                        <img src={engineeringWinsPH} alt="Engineering Wins PH" className="engineering-wins-ph"/>
                     </div>
 
                     <div className="sponsor-logo">
@@ -43,6 +45,14 @@ const Sponsors = () => {
 
                     <div className="sponsor-logo">
                         <img src={kadaKareer} alt="KadaKareer" className="kada-kareer"/>
+                    </div>
+
+                    <div className="sponsor-logo">
+                        <img src={franchiseManila} alt="Franchise Manila" className="franchise-manila"/>
+                    </div>
+
+                    <div className="sponsor-logo">
+                        <img src={pointwest} alt="Pointwest" className="point-west"/>
                     </div>
                 </div>
             </div>

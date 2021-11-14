@@ -49,7 +49,7 @@ const InEventHero = (props) => {
 
 
         <div className="btn-container">
-          <Link to="/form" className="register-btn" href="">
+          <Link to="/register" className="register-btn" href="">
             Register Now
           </Link>
           <a className="learn-more-btn" href="">

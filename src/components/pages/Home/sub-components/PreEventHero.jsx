@@ -43,7 +43,7 @@ const PreEventHero = (props) => {
         }
     };
 
-    const dateOfEvent = new Date(2021, 10, 22, 8, 0 , 0);
+    const dateOfEvent = new Date(2021, 10, 22, 13, 0 , 0);
       
     return (
     <div className="pre-event-hero">
@@ -52,23 +52,23 @@ const PreEventHero = (props) => {
         </div>
 
         <div className="coming-soon">
-        <h3>Coming Soon</h3>
+            <h3>Coming Soon</h3>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-            metus elementum, sollicitudin enim ut, elementum purus.{" "}
-        </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
+                metus elementum, sollicitudin enim ut, elementum purus.{" "}
+            </p>
 
-        <Countdown date={dateOfEvent} renderer={renderCountdownTimer} />
+            <Countdown date={dateOfEvent} renderer={renderCountdownTimer} />
 
-        <div className="btn-container">
-            <Link to="/form" className="register-btn" type="button">
-                Register Now
-            </Link>
-            <a className="learn-more-btn" type="button">
-                Learn More
-            </a>
-        </div>
+            <div className="btn-container">
+                <Link to="/register" className="register-btn" type="button">
+                    Register Now
+                </Link>
+                <a className="learn-more-btn" type="button">
+                    Learn More
+                </a>
+            </div>
         </div>
     </div>
     );

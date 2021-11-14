@@ -13,6 +13,7 @@ const eventTalks = [
       day: 1,
       time: "1:15 PM - 2:00 PM",
       picture: dummySpeaker1,
+      typeOfEvent: "Ready"
     },
 
     {
@@ -24,6 +25,7 @@ const eventTalks = [
       day: 1,
       time: "2:20 PM - 3:05 PM",
       picture: dummySpeaker2,
+      typeOfEvent: "Ready"
     },
 
     {
@@ -35,6 +37,7 @@ const eventTalks = [
       day: 1,
       time: "3:35 PM - 4:20 PM",
       picture: dummySpeaker3,
+      typeOfEvent: "Ready"
     },
 
 
@@ -47,6 +50,7 @@ const eventTalks = [
       day: 2,
       time: "1:15 PM - 2:00 PM",
       picture: dummySpeaker1,
+      typeOfEvent: "Ready"
     },
 
     {
@@ -58,6 +62,7 @@ const eventTalks = [
       day: 2,
       time: "2:20 PM - 3:05 PM",
       picture: dummySpeaker2,
+      typeOfEvent: "Set"
     },
 
     {
@@ -69,6 +74,7 @@ const eventTalks = [
       day: 2,
       time: "3:35 PM - 4:20 PM",
       picture: dummySpeaker3,
+      typeOfEvent: "Set"
     },
 
     {
@@ -80,6 +86,7 @@ const eventTalks = [
       day: 3,
       time: "1:15 PM - 2:00 PM",
       picture: dummySpeaker1,
+      typeOfEvent: "Set"
     },
 
     {
@@ -91,6 +98,7 @@ const eventTalks = [
       day: 3,
       time: "2:20 PM - 3:05 PM",
       picture: dummySpeaker2,
+      typeOfEvent: "Set"
     },
 
     {
@@ -102,6 +110,7 @@ const eventTalks = [
       day: 3,
       time: "3:35 PM - 4:20 PM",
       picture: dummySpeaker3,
+      typeOfEvent: "Grow"
     },
 
 
@@ -114,6 +123,7 @@ const eventTalks = [
       day: 4,
       time: "1:15 PM - 2:00 PM",
       picture: dummySpeaker1,
+      typeOfEvent: "Grow"
     },
 
     {
@@ -125,6 +135,7 @@ const eventTalks = [
       day: 4,
       time: "2:20 PM - 3:05 PM",
       picture: dummySpeaker2,
+      typeOfEvent: "Grow"
     },
 
     {
@@ -136,6 +147,7 @@ const eventTalks = [
       day: 4,
       time: "3:35 PM - 4:20 PM",
       picture: dummySpeaker3,
+      typeOfEvent: "Grow"
     },
 
 
@@ -149,6 +161,7 @@ const eventTalks = [
       day: 5,
       time: "1:15 PM - 2:00 PM",
       picture: dummySpeaker1,
+      typeOfEvent: "Talks"
     },
 
     {
@@ -160,6 +173,7 @@ const eventTalks = [
       day: 5,
       time: "2:20 PM - 3:05 PM",
       picture: dummySpeaker2,
+      typeOfEvent: "Talks"
     },
 
     {
@@ -171,6 +185,7 @@ const eventTalks = [
       day: 5,
       time: "3:35 PM - 4:20 PM",
       picture: dummySpeaker3,
+      typeOfEvent: "Talks"
     },
 ];
 

@@ -27,19 +27,21 @@ export default class Footer extends Component {
           <div className="media-screen-up">
 
             <a
-              href="https://www.facebook.com/gdsc.plm"
-              target="_blank"
-              className="margin-spacing"
-            >
-              <FaFacebook className="socMedIconsIndiv" />
+                href="https://www.facebook.com/gdsc.plm"
+                target="_blank"
+                className="margin-spacing"
+              >
+                <FaFacebook className="socMedIconsIndiv" />
             </a>
-            <a
-              href="https://www.linkedin.com/company/gdsc-plm/mycompany/"
-              target="_blank"
-              className="margin-spacing"
-            >
-              <BsLinkedin className="socMedIconsIndiv BsLinkedin" />
-            </a>
+              <a
+                href="https://www.linkedin.com/company/gdsc-plm/mycompany/"
+                target="_blank"
+                className="margin-spacing"
+              >
+                <BsLinkedin className="socMedIconsIndiv BsLinkedin" />
+              </a>
+
+
             <a
               href="https://gdsc.community.dev/pamantasan-ng-lungsod-ng-maynila/"
               target="_blank"
@@ -47,6 +49,7 @@ export default class Footer extends Component {
             >
               <DSCLogo className="DSCLogo" />
             </a>
+
             <a
               href="https://twitter.com/gdsc_plm"
               target="_blank"
@@ -54,7 +57,8 @@ export default class Footer extends Component {
             >
               <AiFillTwitterCircle className="socMedIconsIndiv AiFillTwitterCircle" />
             </a>
-          </div>
+          </div >
+
 
           <div className="media-screen-down">
             <a
@@ -71,46 +75,33 @@ export default class Footer extends Component {
             >
               <FaYoutube className="socMedIconsIndiv " />
             </a>
-            <a
-              href="https://github.com/GDSC-PLM"
-              target="_blank"
-              className="margin-spacing github-icon "
-            >
-              <FaGithub className="socMedIconsIndiv  " />
-            </a>
-            <a
-              href="https://discord.gg/F6UjYff3Tm"
-              target="_blank"
-              className="margin-spacing discord-icon"
-            >
-              <FaDiscord className="socMedIconsIndiv" />
-            </a>
-            
-          </div>
+
+              <a
+                href="https://github.com/GDSC-PLM"
+                target="_blank"
+                className="margin-spacing github-icon "
+              >
+                <FaGithub className="socMedIconsIndiv  " />
+              </a>
+              <a
+                href="https://discord.gg/F6UjYff3Tm"
+                target="_blank"
+                className="margin-spacing discord-icon"
+              >
+                <FaDiscord className="socMedIconsIndiv" />
+              </a>
+              
+            </div>
         </div>
 
-            <a
-              href="https://github.com/GDSC-PLM"
-              target="_blank"
-              className="margin-spacing github-icon "
-            >
-              <FaGithub className="socMedIconsIndiv  " />
-            </a>
-            <a
-              href="https://discord.gg/F6UjYff3Tm"
-              target="_blank"
-              className="margin-spacing discord-icon"
-            >
-              <FaDiscord className="socMedIconsIndiv" />
-            </a>
+ 
 
-          </div>
-        </div>
         <p>Copyright © 2021. GDSC- PLM. All rights Reserved</p>
 
         <div className="lastLine">
           <img src={BottomBars} />
         </div>
+       
       </footer>
     );
   }
