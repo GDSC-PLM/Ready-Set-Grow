@@ -1,11 +1,11 @@
 .sponsors {
     background: #FAFAFA;
-    height: 360px;
+    padding: 3% 0;
     width: 100%;
 }
 
 .sponsors .sponsors-container {
-    width: 1440px;
+    width: 1640px;
     max-width: 80%;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -77,42 +77,280 @@
     height: 90%;
 }
 
+.sponsors .sponsor-logo .engineering-wins-ph {
+    border-radius: 100%;
+}
+
+
+
+@media (max-width: 1440px) {
+    .sponsors {
+        background: #FAFAFA;
+        width: 100%;
+    }
+    
+    .sponsors .sponsors-container {
+        width: 1440px;
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        margin: 0 auto;
+
+        /* changes */
+   
+    }
+    
+    .section-header {
+        position: relative;
+    }
+
+    .section-header h3 {
+        /* positioning */
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        /* typography */
+        font-size: 28px;
+        color: #858585;
+    
+        /* animation */
+        transition: 200ms;
+
+        /* Changes */
+        font-size: 24px;
+    }
+    
+    .sponsors .sponsors-container .sponsor-logos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sponsors .sponsors-container .sponsor-logo {
+        height: 160px;
+        margin: 4px auto;
+        position: relative;
+        width: 300px;
+
+        /* Changes */
+        height: 120px;
+        width: 232px;
+    }
+
+    .sponsors .sponsors-container .sponsor-logo img {
+        /* positioning */
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        /* box model */
+        max-height: 90%;
+        max-width: 90%;
+        
+        /* typography */
+        text-align: center;
+
+        /* animation */
+        transition: 200ms;
+    }
+
+    .sponsors .sponsor-logo .buoyr {
+        width: 80%;
+    }
+
+    .sponsors .sponsor-logo .dgy {
+        width: 58%;
+        height: auto;
+    }
+
+    .sponsors .sponsor-logo .kada-kareer {
+        height: 90%;
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .sponsors .sponsors-container {
+        width: 1440px;
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        margin: 0 auto;
+
+        /* changes */
+        max-width: 90%;
+    }
+    
+    .section-header {
+        position: relative;
+    }
+
+    .section-header h3 {
+        /* positioning */
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        /* typography */
+        font-size: 28px;
+        color: #858585;
+    
+        /* animation */
+        transition: 200ms;
+
+        /* Prev Changes */
+        font-size: 24px;
+
+        /* Changes */
+        font-size: 20px
+    }
+    
+    .sponsors .sponsors-container .sponsor-logos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sponsors .sponsors-container .sponsor-logo {
+        height: 160px;
+        margin: 4px auto;
+        position: relative;
+        width: 300px;
+
+        /* Changes */
+        height: 120px;
+        width: 232px;
+    }
+
+    .sponsors .sponsors-container .sponsor-logo img {
+        /* positioning */
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        /* box model */
+        max-height: 90%;
+        max-width: 90%;
+        
+        /* typography */
+        text-align: center;
+
+        /* animation */
+        transition: 200ms;
+    }
+}
+
+
+
 @media (max-width: 1024px){
+    
+
     .sponsors .sponsors-container {
         display:flex;
         flex-direction: column;
     }
+
+    .section-header {
+        height: 32px;
+        width: 100%;
+    }
+
     .section-header h3{
-        padding-left: 13vh;
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }  
+}
+
+@media (max-width: 834px) {
+    .sponsors {
+        padding: 8% 0;
+    }
+
+    .sponsors .sponsors-container .sponsor-logo {
+        height: 160px;
+        margin: 4px auto;
+        position: relative;
+        width: 300px;
+
+        /* Prev Changes */
+        height: 120px;
+        width: 232px;
+
+        /* Changes */
+        height: 100px;
+        width: 180px;
     }
 }
 
-@media (max-width: 500px){
+
+
+
+@media (max-width: 530px){
+    .sponsors {
+        padding: 6% 0;
+    }
+
     .sponsors-container {
         display: flex;
         flex-direction: column;
     }
+
     .section-header h3{
-        position: absolute;
         font-size: 13px;
-        padding-left: 6vh;
-        margin-top: 20px;
     }
-    .sponsor-logos{
-        position:relative;
-        height: 70%;
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        padding-left: 5vh;
+
+    .sponsors .sponsors-container .sponsor-logo {
+        height: 160px;
+        margin: 4px auto;
+        position: relative;
+        width: 300px;
+
+        /* Prev Changes */
+        height: 120px;
+        width: 232px;
+
+        /* Prev Changes */
+        height: 100px;
+        width: 180px;
+
+        /* Changes */
+        height: 84px;
+        width: 164px;
     }
-    .sponsor-logo{
-        position:absolute;
-        height: auto;
-        max-width:50%;
-    }
-    .sponsors .sponsor-logo .kada-kareer {
-        height: 50%;
-        margin-left: 100px;
+}
+
+
+@media (max-width: 414px) {
+    .sponsors .sponsors-container .sponsor-logo {
+        height: 160px;
+        margin: 4px auto;
+        position: relative;
+        width: 300px;
+
+        /* Prev Changes */
+        height: 120px;
+        width: 232px;
+
+        /* Prev Changes */
+        height: 100px;
+        width: 180px;
+
+        /* Prev Changes */
+        height: 84px;
+        width: 164px;
+
+        /* Changes */
+        height: 72px;
+        width: 128px;
     }
 }

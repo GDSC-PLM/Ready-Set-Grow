@@ -55,6 +55,9 @@ export default class Footer extends Component {
             </a>
           </div>
 
+
+
+
           <div className="media-screen-down">
             <a
               href="https://www.instagram.com/gdsc_plm/"

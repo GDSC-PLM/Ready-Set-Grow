@@ -55,14 +55,14 @@ export default class App extends Component {
                       innerHeight={this.state.innerHeight}
                       innerWidth={this.state.innerWidth}
                     />}/>
-                  <Route exact path="/form" component={Form}/> 
+                  <Route exact path="/register" component={Form}/> 
                   
                   <Route exact path="/events" component={Events}/> 
                   <Route exact path="/about-us" component={AboutUs}/> 
                   <Route exact path="/not-found" component={NotFound}/> 
                   
                   <Redirect from="/home" exact to="/"/>
-                  <Redirect to="/not-found"/>
+                  <Redirect to="/"/>
             </Switch>
 
             <Footer/>

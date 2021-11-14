@@ -27,7 +27,7 @@ export default class Schedule extends Component {
   setTalksToBeDisplayed = (selectedDay) => {
     let talks = {...this.state.eventTalks};
     let arrayOfTalks = Object.values(talks);
-    let talksToDisplay = arrayOfTalks.filter((talk) => talk.day === selectedDay && talk.confirmed != false);
+    let talksToDisplay = arrayOfTalks.filter((talk) => talk.day === selectedDay && talk.confirmed !== false);
 
     this.setState({ displayedTalks: talksToDisplay });
   };
@@ -76,8 +76,8 @@ export default class Schedule extends Component {
                 <img src={talk.image} alt="speaker" />
               </div>
               <div className="talk-details-container">
-                <span className="tag">{talk.typeOfEvent}</span>
-                <h3 className="speaker-name">{talk.name}</h3>
+                <span className={`tag ${talk.typeOfEvent}`}>{talk.typeOfEvent}</span>
+                <h3 className="speaker-name">{talk.name === "Dan Michael Cortez" ? (<><nobr>{talk.name}</nobr></>) : talk.name}</h3>
                 <p className="organization">{talk.company}</p>
                 <div className="talk-title">{talk.titleOfTalk}</div>
                 <div className="talk-time">
