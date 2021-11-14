@@ -234,7 +234,7 @@
     max-height: 900px;
     padding: 0;
 
-    background: url("../../../../assets/images/png/colored-arrows(small).png");
+    /* background: url("../../../../assets/images/png/colored-arrows(small).png"); */
     background-repeat: no-repeat; 
     background-size: clamp(500px, 90%, 90%) auto;
     background-position: top;

@@ -2,7 +2,8 @@ nav {
   z-index: 5;
   position: fixed;
   width: 100%;
-  top: 5px;
+  /* top: 5px; */
+  padding: 15px 0px 15px 0px;
   height: 100px;
   background: #ffffff;
   box-sizing: border-box;
