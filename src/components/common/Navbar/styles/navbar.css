@@ -47,6 +47,7 @@ nav p {
 
 .nav-item {
   padding-right: 6vw;
+  cursor: pointer;
 }
 
 .nav-learn-more {
