@@ -38,7 +38,9 @@
   height: 232px;
 }
 
+
 /* Core team names */
+
 
 .personName {
   font-size: 19px;
@@ -226,7 +228,7 @@
     line-height: 23px;
     margin: 70px 0px;
   }
-
+  
   .coreTeamText {
     font-size: 38px;
     line-height: 61px;
@@ -304,9 +306,9 @@
   .btnProfile:hover {
     background-color: #f5fcff;
   }
-  
-
 }
+
+
 
 @media screen and (max-width: 400px) {
   .about-us {
@@ -406,5 +408,4 @@
   .btnProfile:hover {
     background-color: #f5fcff;
   }
-  
 }

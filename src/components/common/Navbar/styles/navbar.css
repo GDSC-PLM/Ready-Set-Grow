@@ -7,7 +7,6 @@ nav {
   background: #ffffff;
   box-sizing: border-box;
   padding-top: 10px;
-
   font-family: "Google Sans", "Open Sans";
 }
 
@@ -145,10 +144,12 @@ nav p {
   .NavBarItems {
     position: relative;
     position: fixed;
-  }
+
 }
 
+
 @media screen and (max-width: 1024px) {
+
   nav {
     z-index: 5;
     position: fixed;
@@ -158,8 +159,14 @@ nav p {
     background: #ffffff;
     box-sizing: border-box;
     padding-top: 10px;
-
-    font-family: "Google Sans", "Open Sans";
+  
+    font-family: "Google Sans";
+    font-style: regular;
+    font-weight: 400;
+    font-size: 15px;
+    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+      format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
   }
 
   .logo img {
@@ -176,6 +183,7 @@ nav p {
     align-items: center;
     background: white;
   }
+  
 
   /* --- HAMBURGER STACK CSS --- */
 
@@ -202,9 +210,81 @@ nav p {
     font-size: 1.8rem;
     cursor: pointer;
     margin-right: 40px;
+    margin-top: 0px;    
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: auto;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-top: 10px;
+    font-family: "Google Sans", "Open Sans";
+  }
+
+  .logo img {
+    position: relative;
+    height: 100%;
+    margin-left: 10vw;
+    width: 39px;
+    height: auto;
+  }
+
+  .nav-menu-whole {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: white;
+  }
+
+  /* --- HAMBURGER STACK CSS --- */
+
+  .NavBarItems {
+    position: relative;
+    position: fixed;
+  }
+
+  .fa-times {
+    font-size: 1.2rem;
+  }
+
+  .fa-bars {
+    font-size: 1.2rem;
+  }
+
+  /* Fa plus and fa bar */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 0px;    
+  }
+
+  /* Fa plus and fa bar */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 40px;
     margin-top: 0px;
   }
 
+
+  
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -232,9 +312,6 @@ nav p {
   }
 
 
-
-
-
   /* HOME + EVENTS + ABOUT US */
   .first-three-menu {
     display: flex;
@@ -245,6 +322,7 @@ nav p {
     padding: 0;
     margin: 0;
   }
+
 
   /* NAV + REGISTER */
   .two-last-menu {
@@ -265,6 +343,8 @@ nav p {
   .nav-links {
     text-align: center;
     padding: 15px 0;
+
+
     width: 100%;
     display: table;
   }
@@ -275,9 +355,6 @@ nav p {
     transition: 250ms;
   }
 
-
-
-
   /* REGISTER BUTTON */
 
   /* removes register button problem only for hamburger stacks */
@@ -287,12 +364,12 @@ nav p {
 
   .nav-register-now-mobile {
     width: 15vw;
-    /* background-color: #ffd772; */
     background: rgba(0, 0, 0, 0);
     color: black;
     border-radius: 25px;
     margin-top: 10px;
     padding: 0.3rem 0;
+
   }
 
   .nav-links-register-mobile {
@@ -305,10 +382,11 @@ nav p {
     border-radius: 25px;
     font-size: 15px;
     text-decoration: none;
-    
+
     /* changes */
     margin: 0;
     padding: 0.6rem 0;
+
   }
 
   .nav-links-register-mobile:hover {
@@ -321,9 +399,6 @@ nav p {
 }
 
 
-
-
-
 @media screen and (max-width: 800px) {
   nav {
     z-index: 5;
@@ -334,7 +409,6 @@ nav p {
     background: #ffffff;
     box-sizing: border-box;
     padding-top: 10px;
-
     font-family: "Google Sans", "Open Sans";
   }
 
@@ -344,6 +418,22 @@ nav p {
     margin-left: 10vw;
     width: 39px;
     height: auto;
+    margin-top: 10px;
+  }
+
+  .nav-menu-whole {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: white;
+  }
+  
+
+  /* --- HAMBURGER STACK CSS --- */
+
+  .NavBarItems {
+    position: relative;
+    position: fixed;
   }
 
   .nav-menu-whole {
@@ -367,6 +457,7 @@ nav p {
 
   .fa-bars {
     font-size: 1.2rem;
+
   }
 
   /* Fa plus and fa bar */
@@ -382,6 +473,7 @@ nav p {
     margin-top: 0px;
   }
 
+  
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -574,15 +666,6 @@ nav p {
     padding: 0;
   }
 
-  .nav-menu.active {
-    background: #ffffff;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    padding-bottom: 20px;
-  }
-
    /* HOME + EVENTS + ABOUT US */
    .first-three-menu {
     display: flex;
@@ -624,11 +707,7 @@ nav p {
     transition: 250ms;
   }
 
-
-
-
   /* REGISTER BUTTON */
-
   /* removes register button problem only for hamburger stacks */
   .nav-register-now {
     display: none;
@@ -667,11 +746,12 @@ nav p {
     text-decoration: underline;
   }
 
+
   .nav-learn-more {
     padding: 0;
-    
   }
 }
+
 
 @media screen and (max-width: 400px) {
   nav {
@@ -695,6 +775,7 @@ nav p {
     height: auto;
     margin-top: 10px;
   }
+  
 
   .nav-menu-whole {
     display: flex;
@@ -768,6 +849,7 @@ nav p {
     margin: 0;
   }
 
+
   /* NAV + REGISTER */
   .two-last-menu {
     display: flex;
@@ -800,10 +882,6 @@ nav p {
   }
 
 
-
-
-  /* REGISTER BUTTON */
-
   /* removes register button problem only for hamburger stacks */
   .nav-register-now {
     display: none;
@@ -830,7 +908,6 @@ nav p {
     border-radius: 25px;
     font-size: 12px;
     text-decoration: none;
-    
     /* changes */
     margin: 0;
     padding: 0.6rem 0;
@@ -846,3 +923,4 @@ nav p {
     padding: 0;
   }
 }
+
