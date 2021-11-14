@@ -30,6 +30,27 @@ function Navbar() {
     });
   }
 
+  const handleScrollClickAbout = (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute("href");
+    let location;
+    
+    try {
+      location = document.querySelector("#aboutTheEvent").offsetTop;
+      console.log(location);
+    }
+    catch (ex) {
+      location = 1958;
+    }
+
+    console.log(location);
+    
+    window.scrollTo({
+      left: 0,
+      top: location
+    });
+  }
+
 
   const history = useHistory();
 
@@ -61,7 +82,7 @@ function Navbar() {
 
               <li className="nav-item" onMouseDown={routeChange}>
                 <a className="nav-links" onClick={closeMobileMenu} onMouseUp={handleScrollClick}>
-                  Events
+                  Talks
                 </a>
               </li>
 
@@ -77,7 +98,7 @@ function Navbar() {
 
             <div className="two-last-menu">
               <li className="nav-learn-more">
-                <Link to="/learn-more" className="nav-links learn-moree" onClick={closeMobileMenu}>
+                <Link to="/learn-more" className="nav-links learn-moree" onClick={closeMobileMenu} onMouseUp={handleScrollClickAbout}>
                   Learn More
                 </Link>
               </li>
@@ -95,7 +116,7 @@ function Navbar() {
               {/* this is for the register now button mobile version */}
 
               <li className="nav-register-now-mobile">
-                <Link to="/register" className="nav-links-register-mobile" onClick={closeMobileMenu}>
+                <Link to="/register" className="nav-links-register-mobile" onClick={closeMobileMenu} onMouseUp={handleScrollClickAbout}>
                   Register Now
                 </Link>
               </li>

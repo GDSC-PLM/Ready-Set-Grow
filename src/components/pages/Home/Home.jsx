@@ -28,7 +28,10 @@ export default class Home extends Component {
 
           {/* Please choose one of these to work on, and comment out the rest, so you can focus on
               making the stylings of your chosen component to be responsive */}
-          <AboutTheEvent/>
+          <div id="aboutTheEvent">
+            <AboutTheEvent/>
+          </div>
+
           <Sponsors/>
           
           <div id="events">
