@@ -104,6 +104,56 @@ nav p {
 /* this removes nav bar mobile; only for global navbar css */
 .nav-links-register-mobile {
   display: none;
+  margin-top: 10px;
+}
+
+.nav-register-now-mobile {
+  display: none;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-links-register-mobile {
+  display: none;
+  text-decoration: none;
+  color: #737373;
+}
+
+@media screen and (max-width: 1024px) {
+
+  nav {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 100px;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-top: 20px;
+  
+    font-family: "Google Sans";
+    font-style: regular;
+    font-weight: 400;
+    font-size: 20px;
+    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+      format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+
+  .logo img {
+    position: relative;
+    height: 100%;
+    margin-left: 10vw;
+    width: 49px;
+    height: auto;
+  }
+  
+  .NavBarItems {
+    position: relative;
+    position: fixed;
+
 }
 
 

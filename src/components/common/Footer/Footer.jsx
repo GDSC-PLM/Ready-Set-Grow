@@ -59,10 +59,6 @@ export default class Footer extends Component {
             </a>
           </div >
 
-
-
-          
-
             <div className="media-screen-down">
               <a
                 href="https://www.instagram.com/gdsc_plm/"
@@ -97,7 +93,8 @@ export default class Footer extends Component {
             </div>
         </div>
 
-          
+ 
+
         <p>Copyright © 2021. GDSC- PLM. All rights Reserved</p>
 
         <div className="lastLine">

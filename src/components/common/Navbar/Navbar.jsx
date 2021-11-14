@@ -45,7 +45,6 @@ function Navbar() {
 
             {/* last two menus */}
 
-            
             <div className="two-last-menu">
               <li className="nav-learn-more">
                 <Link to="/learn-more" className="nav-links" onClick={closeMobileMenu}>
@@ -56,6 +55,7 @@ function Navbar() {
               {/* this is for the register now button web version */}
 
               <li className="nav-register-now">
+
                 <Link to="/register-now" className="nav-links-register" onClick={closeMobileMenu}>
                   Register Now
                 </Link>
