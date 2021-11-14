@@ -144,6 +144,7 @@ nav p {
   .NavBarItems {
     position: relative;
     position: fixed;
+  }
 
 }
 
@@ -333,6 +334,7 @@ nav p {
     justify-content: center;
     margin: 0;
     margin-right: 0;
+    position: static;
   }
 
   .nav-item {
@@ -923,4 +925,3 @@ nav p {
     padding: 0;
   }
 }
-
