@@ -9,7 +9,6 @@ import Events from "./components/pages/Events/Events.jsx";
 import AboutUs from "./components/pages/AboutUs/AboutUs.jsx";
 import Form from "./components/pages/Form/Form.jsx";
 import NotFound from "./components/pages/NotFound/NotFound.jsx";
-import { getCoreTeam, getPartners, getSponsors, getSpeakers, getCoPresenters } from "./util/getDataHelper.js";
 
 
 export default class App extends Component {
@@ -23,11 +22,6 @@ export default class App extends Component {
   componentDidMount() {
     // These functions will be called as the website is loaded
     this.getInnerWidthAndHeight();
-    getCoreTeam();
-    getPartners();
-    getSponsors();
-    getSpeakers();
-    getCoPresenters();
 
     // === This function will be called when you resize the window or clicked anywhere on the website ===
     window.addEventListener("resize", this.getInnerWidthAndHeight);
