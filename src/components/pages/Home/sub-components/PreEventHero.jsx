@@ -44,7 +44,31 @@ const PreEventHero = (props) => {
     };
 
     const dateOfEvent = new Date(2021, 10, 22, 13, 0 , 0);
-      
+
+
+    const handleScrollClick = (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute("href");
+        let location;
+        
+        try {
+          location = document.querySelector("#aboutTheEvent").offsetTop;
+          console.log(location);
+        }
+        catch (ex) {
+          location = 1958;
+        }
+    
+        console.log(location);
+        
+        window.scrollTo({
+          left: 0,
+          top: location
+        });
+      }
+    
+    
+
     return (
     <div className="pre-event-hero">
         <div className="colored-bars">
@@ -55,8 +79,10 @@ const PreEventHero = (props) => {
             <h3>Coming Soon</h3>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-                metus elementum, sollicitudin enim ut, elementum purus.{" "}
+            A week-long series of career and profile-building filled with webinars and workshops. 
+            Get ready for exclusive events, set up new goals, and grow with priceless learnings. 
+            <br /><br />
+            Stay Tuned.{" "}
             </p>
 
             <Countdown date={dateOfEvent} renderer={renderCountdownTimer} />
@@ -65,7 +91,7 @@ const PreEventHero = (props) => {
                 <Link to="/register" className="register-btn" type="button">
                     Register Now
                 </Link>
-                <a className="learn-more-btn" type="button">
+                <a className="learn-more-btn" type="button" onMouseUp={handleScrollClick}>
                     Learn More
                 </a>
             </div>
