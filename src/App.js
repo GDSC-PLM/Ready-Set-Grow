@@ -77,6 +77,7 @@ export default class App extends Component {
             <Route exact path="/events" component={AboutTheEvent} />
             <Route exact path="/about-us" component={AboutUs} />
             <Route exact path="/not-found" component={NotFound}/> 
+            <Route exact path="/register-now" component={Form}/> 
 
 
 
@@ -85,13 +86,6 @@ export default class App extends Component {
               path="/learn-more"
               component={() => {
                 window.location.replace("https://www.facebook.com/gdsc.plm");
-                return null;
-              }}
-            />
-            <Route
-              path="/register-now"
-              component={() => {
-                window.location.replace("https://forms.gle/WDeisdHPzUS68ztm9");
                 return null;
               }}
             />

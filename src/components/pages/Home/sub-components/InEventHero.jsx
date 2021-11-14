@@ -33,7 +33,6 @@ const InEventHero = (props) => {
             <span>Grow</span>&nbsp;
           </div>
           )}
-        
 
         <p className="date-of-event">
           November 22 - November 26, 2021

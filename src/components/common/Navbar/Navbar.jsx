@@ -22,8 +22,6 @@ function Navbar() {
 
         <div className="nav-menu-mobile">
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            
-            {/* first three menus */}
 
             <div className="first-three-menu">
               <li className="nav-item">
@@ -36,6 +34,7 @@ function Navbar() {
                   Events
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
                   About us
@@ -43,8 +42,10 @@ function Navbar() {
               </li>
             </div>
 
+
             {/* last two menus */}
 
+            
             <div className="two-last-menu">
               <li className="nav-learn-more">
                 <Link to="/learn-more" className="nav-links" onClick={closeMobileMenu}>
@@ -74,5 +75,6 @@ function Navbar() {
     </nav>
   );
 }
+
 
 export default Navbar;
