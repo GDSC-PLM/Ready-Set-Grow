@@ -3,16 +3,15 @@ nav {
   position: fixed;
   width: 100%;
   top: 0px;
-
-  height: 100px;
+  height: auto;
   background: #ffffff;
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-top: 10px;
 
   font-family: "Google Sans";
   font-style: regular;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
     format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -37,7 +36,7 @@ nav p {
   position: relative;
   height: 100%;
   margin-left: 10vw;
-  width: 59px;
+  width: 39px;
   height: auto;
 }
 
@@ -47,7 +46,7 @@ nav p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 7vw;
+  margin-left: 8vw;
 }
 
 .nav-item {
@@ -71,8 +70,8 @@ nav p {
   border: 2px solid #ffd772;
   box-sizing: border-box;
   border-radius: 25px;
-  width: 186px;
-  height: 58px;
+  width: 166px;
+  height: 38px;
   left: 158px;
   top: 0px;
 
@@ -94,14 +93,16 @@ nav p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 13vw;
-}
-
-.fa-bars {
-  color: #000;
+  margin-left: 15vw;
 }
 
 .menu-icon {
+  display: none;
+  margin-top: 10px;
+}
+
+/* this removes nav bar mobile; only for global navbar css */
+.nav-links-register-mobile {
   display: none;
   margin-top: 10px;
 }
@@ -155,168 +156,23 @@ nav p {
 
 }
 
+
 @media screen and (max-width: 1024px) {
-  .NavBarItems {
-    position: relative;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  .first-three-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .two-last-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav-menu.active {
-    background: #ffffff;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    padding-bottom: 20px;
-  }
-
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-links:hover {
-    /* background-color: #ffd772; */
-    text-decoration: underline;
-    color: black;
-    transition: 250ms;
-  }
-
-  .nav-links-register-mobile {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-    background-color: #ffd772;
-    color: black;
-    border-radius: 25px;
-  }
-
-  .nav-links-register-mobile:hover {
-    text-decoration: underline;
-  }
-
-  .nav-register-now {
-    display: none;
-  }
-
-  .nav-item {
-    width: 50vw;
-  }
-
-  .nav-learn-more {
-    width: 50vw;
-  }
-
-  .nav-register-now-mobile {
-    width: 50vw;
-    background-color: #ffd772;
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    text-decoration: underline;
-    color: black;
-    background-size: auto;
-  }
-
-  .nav-register-now {
-    background-color: transparent;
-
-    border: none;
-    height: 100%;
-    /* padding: 0; */
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    /* width: 186px;
-    height: 58px;
-    left: 158px;
-    top: 0px; */
-    /* padding: 30px; */
-    display: none;
-  }
-
-  .nav-links-register {
-    color: #737373;
-    padding: 32px;
-    
-  }
-
-  .nav-links-register:hover {
-    color: black;
-  }
-
-  .nav-register-now:hover {
-    background-color: #ffd772;
-    border-radius: 0;
-    text-decoration: underline;
-  }
-
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 800px) {
 
   nav {
     z-index: 5;
     position: fixed;
     width: 100%;
     top: 0px;
-    height: 100px;
+    height: auto;
     background: #ffffff;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 10px;
   
     font-family: "Google Sans";
     font-style: regular;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
       format("woff2");
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -329,7 +185,17 @@ nav p {
     width: 39px;
     height: auto;
   }
+
+  .nav-menu-whole {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: white;
+  }
   
+
+  /* --- HAMBURGER STACK CSS --- */
+
   .NavBarItems {
     position: relative;
     position: fixed;
@@ -342,15 +208,28 @@ nav p {
   .fa-bars {
     font-size: 1.5rem;
   }
-  
 
+  /* Fa plus and fa bar */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 0px;    
+  }
+
+  
   .nav-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -358,26 +237,6 @@ nav p {
     text-align: center;
     justify-content: center;
     padding: 0;
-    
-  }
-  .first-three-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .two-last-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
   }
 
   .nav-menu.active {
@@ -389,53 +248,134 @@ nav p {
     padding-bottom: 20px;
   }
 
+
+
+  /* HOME + EVENTS + ABOUT US */
+  .first-three-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  /* NAV + REGISTER */
+  .two-last-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 19px;
+  }
+
+
+/* NAV LINKS */
   .nav-links {
     text-align: center;
-    padding: 1rem;
+    padding: 15px;
     width: 100%;
     display: table;
-    font-size: 1.2rem;
-    margin: 0px;
   }
 
   .nav-links:hover {
-    /* background-color: #ffd772; */
     text-decoration: underline;
     color: black;
     transition: 250ms;
   }
 
+
+  /* REGISTER BUTTON */
+  
+  /* removes register button problem only for hamburger stacks */
+  .nav-register-now {
+    display: none;
+  }
+
+  .nav-register-now-mobile {
+    width: 15vw;
+    background-color: #ffd772;
+    color: black;
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
   .nav-links-register-mobile {
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.3rem;
     width: 100%;
     display: table;
     background-color: #ffd772;
     color: black;
     border-radius: 25px;
-    font-size: 1.2rem;
+    font-size: 15px;
+    text-decoration: none;
+ 
   }
 
   .nav-links-register-mobile:hover {
     text-decoration: underline;
   }
 
-  .nav-register-now {
-    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+  nav {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: auto;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-top: 10px;
+  
+    font-family: "Google Sans";
+    font-style: regular;
+    font-weight: 400;
+    font-size: 15px;
+    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+      format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
   }
 
-  .nav-item {
-    width: 50vw;
+  .logo img {
+    position: relative;
+    height: 100%;
+    margin-left: 10vw;
+    width: 39px;
+    height: auto;
   }
 
-  .nav-learn-more {
-    width: 50vw;
+  .nav-menu-whole {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: white;
+  }
+  
+
+  /* --- HAMBURGER STACK CSS --- */
+
+  .NavBarItems {
+    position: relative;
+    position: fixed;
   }
 
-  .nav-register-now-mobile {
-    width: 30vw;
+  .fa-times {
+    font-size: 1.2rem;
   }
 
+  .fa-bars {
+    font-size: 1.2rem;
+  }
+
+  /* Fa plus and fa bar */
   .menu-icon {
     display: block;
     position: absolute;
@@ -445,25 +385,124 @@ nav p {
     font-size: 1.8rem;
     cursor: pointer;
     margin-right: 40px;
+    margin-top: 0px;    
+  }
+
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding-bottom: 20px;
+  }
+
+
+
+  /* HOME + EVENTS + ABOUT US */
+  .first-three-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  /* NAV + REGISTER */
+  .two-last-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 19px;
+  }
+
+
+/* NAV LINKS */
+  .nav-links {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    text-decoration: underline;
+    color: black;
+    transition: 250ms;
+  }
+
+
+  /* REGISTER BUTTON */
+  
+  /* removes register button problem only for hamburger stacks */
+  .nav-register-now {
+    display: none;
+  }
+
+  .nav-register-now-mobile {
+    width: 15vw;
+    background-color: #ffd772;
+    color: black;
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
+  .nav-links-register-mobile {
+    text-align: center;
+    padding: 0.3rem;
+    width: 100%;
+    display: table;
+    background-color: #ffd772;
+    color: black;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+ 
+  }
+
+  .nav-links-register-mobile:hover {
+    text-decoration: underline;
   }
 }
 
 @media screen and (max-width: 500px) {
-
   nav {
     z-index: 5;
     position: fixed;
     width: 100%;
     top: 0px;
-    height: 100px;
+    height: auto;
     background: #ffffff;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 10px;
   
     font-family: "Google Sans";
     font-style: regular;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 12px;
     src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
       format("woff2");
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -475,6 +514,22 @@ nav p {
     margin-left: 10vw;
     width: 29px;
     height: auto;
+    margin-top: 10px;
+  }
+
+  .nav-menu-whole {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: white;
+  }
+  
+
+  /* --- HAMBURGER STACK CSS --- */
+
+  .NavBarItems {
+    position: relative;
+    position: fixed;
   }
 
   .fa-times {
@@ -484,19 +539,27 @@ nav p {
   .fa-bars {
     font-size: 1rem;
   }
-  
-  .NavBarItems {
-    position: relative;
-    position: fixed;
+
+  /* Fa plus and fa bar */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 40px;    
   }
 
+  
   .nav-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -504,26 +567,6 @@ nav p {
     text-align: center;
     justify-content: center;
     padding: 0;
-    
-  }
-  .first-three-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .two-last-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
   }
 
   .nav-menu.active {
@@ -535,51 +578,135 @@ nav p {
     padding-bottom: 20px;
   }
 
+
+
+  /* HOME + EVENTS + ABOUT US */
+  .first-three-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  /* NAV + REGISTER */
+  .two-last-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 11px;
+  }
+
+
+/* NAV LINKS */
   .nav-links {
     text-align: center;
-    padding: 0.8rem;
+    padding: 15px;
     width: 100%;
     display: table;
-    font: 0.5rem
   }
 
   .nav-links:hover {
-    /* background-color: #ffd772; */
     text-decoration: underline;
     color: black;
     transition: 250ms;
   }
 
+
+  /* REGISTER BUTTON */
+  
+  /* removes register button problem only for hamburger stacks */
+  .nav-register-now {
+    display: none;
+  }
+
+  .nav-register-now-mobile {
+    width: 25vw;
+    background-color: #ffd772;
+    color: black;
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
   .nav-links-register-mobile {
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.3rem;
     width: 100%;
     display: table;
     background-color: #ffd772;
     color: black;
     border-radius: 25px;
+    font-size: 12px;
+    text-decoration: none;
+ 
   }
 
   .nav-links-register-mobile:hover {
     text-decoration: underline;
   }
 
-  .nav-register-now {
-    display: none;
+}
+
+
+@media screen and (max-width: 400px) {
+  nav {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: auto;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-top: 10px;
+  
+    font-family: "Google Sans";
+    font-style: regular;
+    font-weight: 400;
+    font-size: 12px;
+    src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
+      format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
   }
 
-  .nav-item {
-    width: 40vw;
+  .logo img {
+    position: relative;
+    height: 100%;
+    margin-left: 10vw;
+    width: 29px;
+    height: auto;
+    margin-top: 10px;
   }
 
-  .nav-learn-more {
-    width: 40vw;
+  .nav-menu-whole {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: white;
+  }
+  
+
+  /* --- HAMBURGER STACK CSS --- */
+
+  .NavBarItems {
+    position: relative;
+    position: fixed;
   }
 
-  .nav-register-now-mobile {
-    width: 40vw;
+  .fa-times {
+    font-size: 1rem;
   }
 
+  .fa-bars {
+    font-size: 1rem;
+  }
+
+  /* Fa plus and fa bar */
   .menu-icon {
     display: block;
     position: absolute;
@@ -588,159 +715,105 @@ nav p {
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    font-size: 0.5rem;
-    margin-top: 20px;
-    margin-right: 15px;
-
+    margin-right: 40px;    
   }
 
-}
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
 
-  @media screen and (max-width: 400px) {
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding-bottom: 20px;
+  }
 
-    nav {
-      z-index: 5;
-      position: fixed;
-      width: 100%;
-      top: 0px;
-      height: 100px;
-      background: #ffffff;
-      box-sizing: border-box;
-      padding-top: 20px;
-    
-      font-family: "Google Sans";
-      font-style: regular;
-      font-weight: 400;
-      font-size: 20px;
-      src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaErENHsxJlGDuGo1OIlL3L8phULjtH.woff2)
-        format("woff2");
-      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
+
+
+  /* HOME + EVENTS + ABOUT US */
+  .first-three-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  /* NAV + REGISTER */
+  .two-last-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 8px;
+  }
+
+
+/* NAV LINKS */
+  .nav-links {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    text-decoration: underline;
+    color: black;
+    transition: 250ms;
+  }
+
+
+  /* REGISTER BUTTON */
   
-    .logo img {
-      position: relative;
-      height: 100%;
-      margin-left: 10vw;
-      width: 29px;
-      height: auto;
-    }
-  
-    .fa-times {
-      font-size: 1rem;
-    }
-  
-    .fa-bars {
-      font-size: 1rem;
-    }
-    
-    .NavBarItems {
-      position: relative;
-      position: fixed;
-    }
-  
-    .nav-menu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      position: absolute;
-      top: 60px;
-      left: -100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      padding: 0;
-      
-    }
-    .first-three-menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .two-last-menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .nav-menu.active {
-      background: #ffffff;
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-      padding-bottom: 20px;
-    }
-  
-    .nav-links {
-      text-align: center;
-      padding: 0.8rem;
-      width: 100%;
-      display: table;
-      font-size: 0.9rem;
-    }
-  
-    .nav-links:hover {
-      /* background-color: #ffd772; */
-      text-decoration: underline;
-      color: black;
-      transition: 250ms;
-    }
-  
-    .nav-links-register-mobile {
-      text-align: center;
-      padding: 0.4rem;
-      width: 100%;
-      display: table;
-      background-color: #ffd772;
-      color: black;
-      border-radius: 25px;
-      font-size: 0.9rem;
-      margin-top: 8px;
-    }
-  
-    .nav-links-register-mobile:hover {
-      text-decoration: underline;
-    }
-  
-    .nav-register-now {
-      display: none;
-    }
-  
-    .nav-item {
-      width: 40vw;
-    }
-  
-    .nav-learn-more {
-      width: 40vw;
-    }
-  
-    .nav-register-now-mobile {
-      width: 40vw;
-    }
-  
-    .menu-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-      font-size: 0.5rem;
-      margin-top: 20px;
-      margin-right: 15px;
-  
-    }
+  /* removes register button problem only for hamburger stacks */
+  .nav-register-now {
+    display: none;
+  }
+
+  .nav-register-now-mobile {
+    width: 25vw;
+    background-color: #ffd772;
+    color: black;
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
+  .nav-links-register-mobile {
+    text-align: center;
+    padding: 0.3rem;
+    width: 100%;
+    display: table;
+    background-color: #ffd772;
+    color: black;
+    border-radius: 25px;
+    font-size: 12px;
+    text-decoration: none;
+ 
+  }
+
+  .nav-links-register-mobile:hover {
+    text-decoration: underline;
+  }
   }

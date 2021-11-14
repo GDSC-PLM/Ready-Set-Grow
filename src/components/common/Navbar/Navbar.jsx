@@ -26,12 +26,10 @@ function Navbar() {
             <div className="first-three-menu">
               <li className="nav-item">
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-
                 <Link to="/events" className="nav-links" onClick={closeMobileMenu}>
                   Events
                 </Link>
@@ -57,6 +55,7 @@ function Navbar() {
               {/* this is for the register now button web version */}
 
               <li className="nav-register-now">
+
                 <Link to="/register-now" className="nav-links-register" onClick={closeMobileMenu}>
                   Register Now
                 </Link>
@@ -66,16 +65,6 @@ function Navbar() {
 
               <li className="nav-register-now-mobile">
                 <Link to="/register-now" className="nav-links-register-mobile" onClick={closeMobileMenu}>
-
-            <div className="two-last-menu">
-              <li className="nav-learn-more">
-                <Link to="/learn-more" className="nav-links">
-                  Learn More
-                </Link>
-              </li>
-              <li className="nav-register-now">
-                <Link to="/register-now" className="nav-links-register">
-
                   Register Now
                 </Link>
               </li>
