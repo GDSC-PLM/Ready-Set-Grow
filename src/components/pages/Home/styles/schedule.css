@@ -10,7 +10,7 @@
   font-family: "Google Sans", "Open Sans";
 
   /* visual */
-  background: url("../../../../assets/images/png/colored-arrows.png");
+  /* background: url("../../../../assets/images/png/colored-arrows.png"); */
   background-repeat: repeat-y; 
   background-size: clamp(350px, 96%, 1400px) auto;
   background-position: center;

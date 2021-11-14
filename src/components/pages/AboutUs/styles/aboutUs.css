@@ -3,7 +3,7 @@
 
   font-family: "Google Sans", "Open Sans";
 
-  background: url("../../../../assets/images/png/About-Us-bg.png");
+  /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
   background-repeat: repeat;
   background-size: 100%;
   background-position: center;
@@ -125,7 +125,7 @@
 
 @media screen and (max-width: 800px) {
   .about-us {
-    background: url("../../../../assets/images/png/About-Us-bg.png");
+    /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
@@ -207,7 +207,7 @@
 
 @media screen and (max-width: 550px) {
   .about-us {
-    background: url("../../../../assets/images/png/About-Us-bg.png");
+    /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
@@ -312,7 +312,7 @@
 
 @media screen and (max-width: 400px) {
   .about-us {
-    background: url("../../../../assets/images/png/About-Us-bg.png");
+    /* background: url("../../../../assets/images/png/About-Us-bg.png"); */
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
