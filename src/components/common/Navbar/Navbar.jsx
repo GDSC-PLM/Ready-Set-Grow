@@ -134,7 +134,6 @@ function Navbar() {
                   Register Now
                 </Link>
               </li>
-
               {/* this is for the register now button mobile version */}
 
               <li className="nav-register-now-mobile">
