@@ -51,6 +51,28 @@ function Navbar() {
     });
   }
 
+  const handleScrollClickHome = (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute("href");
+    let location;
+    
+    try {
+      location = document.querySelector("#home").offsetTop;
+      console.log(location);
+    }
+    catch (ex) {
+      location = 0;
+    }
+
+    console.log(location);
+    
+    window.scrollTo({
+      left: 0,
+      top: 0
+    });
+  }
+
+
 
   const history = useHistory();
 
@@ -75,7 +97,7 @@ function Navbar() {
 
             <div className="first-three-menu">
               <li className="nav-item">
-                <Link to="/" className="nav-links" onClick={closeMobileMenu}> 
+                <Link to="/" className="nav-links" onClick={closeMobileMenu} onMouseUp={handleScrollClickHome}> 
                   Home
                 </Link>
               </li>
@@ -87,7 +109,7 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
+                <Link to="/about-us" className="nav-links" onClick={closeMobileMenu} onMouseUp={handleScrollClickHome}>
                   About us
                 </Link>
               </li>
@@ -107,16 +129,15 @@ function Navbar() {
 
               <li className="nav-register-now">
 
-                <Link to="/register" className="nav-links-register" onClick={closeMobileMenu}>
+                <Link to="/register" className="nav-links-register" onClick={closeMobileMenu} onMouseUp={handleScrollClickHome}>
 
                   Register Now
                 </Link>
               </li>
-
               {/* this is for the register now button mobile version */}
 
               <li className="nav-register-now-mobile">
-                <Link to="/register" className="nav-links-register-mobile" onClick={closeMobileMenu} onMouseUp={handleScrollClickAbout}>
+                <Link to="/register" className="nav-links-register-mobile" onClick={closeMobileMenu} onMouseUp={handleScrollClickHome}>
                   Register Now
                 </Link>
               </li>
