@@ -11,7 +11,7 @@
 
 .pre-event-hero .colored-bars {
   bottom: -10%;
-  height: 95vh;
+  height: 110%;
   justify-items: bottom;
   position: absolute;
   right: -7%;
@@ -131,6 +131,59 @@
   margin-left: 40px;
   text-align: left;
   cursor: pointer;
+}
+
+
+@media (min-width: 2200px) {
+  .pre-event-hero {
+    /* positioning */
+    position: relative;
+  
+    /* box model */
+    height: 95vh;
+    max-height: 1100px;
+    overflow: hidden;
+    padding-left: 10%;
+
+    /* Changes */
+    padding-left: 14%;
+  }
+  
+  
+.pre-event-hero .colored-bars {
+  bottom: -10%;
+  height: 110%;
+  justify-items: bottom;
+  position: absolute;
+  right: -7%;
+  z-index: 0;
+
+  /* Changes */
+  right: 4%;
+}
+
+.pre-event-hero .colored-bars img {
+  bottom: 0;
+  height: 100%;
+  position: relative;
+}
+
+.pre-event-hero .coming-soon {
+  /* positioning */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  /* box model */
+  width: 600px;
+
+  /* typography*/
+  font-family: "Google Sans", "Open Sans";
+
+  /* animation */
+  transition: 200ms;
+}
 }
 
 
