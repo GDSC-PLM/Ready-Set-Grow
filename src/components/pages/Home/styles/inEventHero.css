@@ -12,13 +12,13 @@
 .in-event-hero .colored-bars-2 {
   /*positioning*/
   position: absolute;
-  right: -14%;
-  bottom: -36%;
+  right: 0;
+  bottom: -42%;
   justify-items: bottom;
   z-index: 0;
 
   /* box model */
-  height: 115vh;
+  height: 140%;
   max-height: 1360px;
 
   /* animation */
@@ -190,7 +190,7 @@
 
 @media (max-width: 1280px) {
   .in-event-hero .colored-bars-2 {
-    max-height: 1180px;
+    max-height: 1240px;
   }
 
   .in-event-hero .event-details {
@@ -219,8 +219,6 @@
 
 
 
-
-
 /* ==== Medium screen width ==== */
 /* ==== Width: 1024px ===== */
 
@@ -236,6 +234,16 @@
     background-position: top;
   }
 
+  .in-event-hero .confetti {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  
+
   .in-event-hero .colored-bars-2 {
     /* positioning*/
     left: 0;
@@ -245,7 +253,7 @@
     /* box model */
     height: auto;
     max-height: 1180px;
-    width: 720px;
+    width: 480px;
     
     /* typography */
     text-align: center;
@@ -316,7 +324,53 @@
   .in-event-hero .event-details .learn-more-btn {
     margin-left: 16px;
   }
+
+  @media (min-height: 595px) and (max-height: 620px) {
+    .in-event-hero .colored-bars-2 {
+      /* height: 600px; */
+      width: 360px;
+    }
+  
+    .in-event-hero .event-details {
+      width: 480px;
+    }
+  
+    .in-event-hero .event-name {
+      font-size: 56px;
+    }
+  
+    .in-event-hero .date-of-event {
+      font-size: 20px;
+    }
+  
+    .in-event-hero .tagline {
+      font-size: 14px;
+    }
+  
+    .in-event-hero .event-details a {
+      /* Changes */
+      font-size: 18px;
+      height: 48px;
+      width: 160px;
+    }
+  
+    .in-event-hero .event-details a {
+      font-size: 16px;
+      height: 40px;
+      width: 140px;
+    }
+  
+    .in-event-hero .event-details .register-btn {
+      margin-right: 16px;
+    }
+  
+    .in-event-hero .event-details .learn-more-btn {
+      margin-left: 16px;
+    }
+  }
 }
+
+
 
 
 
@@ -332,6 +386,7 @@
   .in-event-hero .colored-bars-2 {
     left: -120%;
     right: -120%;
+    height: auto;
   }
 
   .in-event-hero .colored-bars-2 img {
@@ -396,8 +451,8 @@
   }
 
   .in-event-hero .colored-bars-2 {
-    width: 640px;
-    bottom: -24%;
+    width: 400px;
+    bottom: -32%;
   }
 
   .in-event-hero .colored-bars-2 img {
@@ -447,6 +502,10 @@
 /* === Width 540px ==== */
 
 @media (max-width: 540px) {
+
+  .in-event-hero .confetti {
+    top: 14%;
+  }
 
   .in-event-hero .colored-bars-2 img {
     width: 90%;
@@ -501,9 +560,14 @@
     background-repeat: repeat-y; 
   }
 
+  .in-event-hero .confetti {
+    top: 12%;
+  }
+
   .in-event-hero .colored-bars-2 {
-    width: 500px;
-    bottom: -20%;
+    height: auto;
+    width: 85%;
+    bottom: -32%;
     left: -20%;
     right: -20%;
     max-width: 120%;
@@ -514,7 +578,7 @@
   }
 
   .in-event-hero .event-details {
-    top: 25%;
+    top: 30%;
   }
 
   .in-event-hero .event-name {
@@ -550,6 +614,17 @@
   }
 }
 
+@media (max-width: 320px) {
+  .in-event-hero .event-details {
+    top: 34%;
+  }
+
+  .in-event-hero .colored-bars-2 {
+    width: 240px;
+  }
+
+}
+
 
 
 
@@ -564,8 +639,7 @@
   }
 
   .in-event-hero .colored-bars-2 {
-    width: 500px;
-    bottom: -10%;
+    bottom: -20%;
     left: -20%;
     right: -20%;
     max-width: 120%;
