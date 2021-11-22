@@ -43,7 +43,8 @@ const PreEventHero = (props) => {
         }
     };
 
-    const dateOfEvent = new Date(2021, 10, 22, 13, 0 , 0);
+    // const dateOfEvent = new Date(2021, 10, 22, 13, 0 , 0);
+    const dateOfEvent = new Date(2021, 10, 21, 6, 28 , 15);
 
 
     const handleScrollClick = (e) => {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // Assets
+import confetti from "../../../../assets/images/png/colored-arrows(small).png";
 import coloredBars2 from "../../../../assets/images/png/Illustration.png";
 import coloredBarsSmall2 from "../../../../assets/images/png/colored-bars-2(small).png";
 // Stylings
@@ -13,6 +14,8 @@ const InEventHero = (props) => {
 
   return (
     <div className="in-event-hero">
+
+    { props.innerWidth <= 1024 ? <img className="confetti" src={confetti} alt="Colored Bars" /> : <></> }
       
       <div className="colored-bars-2">
         {/* The background image will change if the screen width is 1024px or smaller */}
